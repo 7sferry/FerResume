@@ -8,7 +8,7 @@ $(function() {
     $("header h1").fitText(1, { minFontSize: '10px', maxFontSize: '72px' });
     $(".email").fitText(1.5);
     autosertifikat(5000);
-    autobio(2000);
+    autobio(3000);
     bio();
     AOS.init({
         duration: 1200

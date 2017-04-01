@@ -17,8 +17,8 @@ bio:
 skill:
 - {nama: Programming, nilai: 8}
 - {nama: Learning, nilai: 10}
-- {nama: web design, nilai: 6}
-- {nama: planning, nilai: 6}
+- {nama: Web Design, nilai: 6}
+- {nama: Planning, nilai: 6}
 - {nama: English, nilai: 7}
 - {nama: Logical Thinking, nilai: 9}
 - {nama: Analysis, nilai: 6}
@@ -42,15 +42,15 @@ projects:
 
 #dokumen
 dokumen:
-- {img: Oracle.jpg, ikon: oracle-ikon.png,
+- {img: oracle.jpg, ikon: oracle-ikon.png,
 teks: '<strong>Badan Nasional Sertifikasi Profesi</strong><br><em>Certificate of Competence</em><br>Oracle Database Programming'}
-- {img: SAP.jpg, ikon: sap-ikon.png,
+- {img: sap.jpg, ikon: sap-ikon.png,
 teks: '<strong>SAP Edugate</strong><br><em>Certificate of Accomplishment</em><br>BC400 - Introduction to the ABAP Workbench'}
-- {img: Toefl.jpg, ikon: toefl-ikon.png,
+- {img: toefl.jpg, ikon: toefl-ikon.png,
 teks: '<strong>UPT Bahasa</strong><br><em>English Proficiency Test Result</em><br>Score: 457'}
-- {img: Poltekpos.jpg, ikon: poltekpos-ikon.png,
+- {img: poltekpos.jpg, ikon: poltekpos-ikon.png,
 teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Diploma Teknik Informatik</em>a<br>GPA: 3.47/4.00'}
-- {img: Tekmira.jpg, ikon: tekmira-ikon.png,
+- {img: tekmira.jpg, ikon: tekmira-ikon.png,
 teks: '<strong>Puslitbang tekMIRA</strong><br><em>Kunjungan Industri</em><br>'}
 
 #socmed

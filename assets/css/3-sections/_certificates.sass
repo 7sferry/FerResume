@@ -15,12 +15,12 @@
     &.logo-aktif
       //@extend %jelly
       +display(flex)
-      @extend %swoosh
+      //@extend %swoosh
+      @extend %sway
 
     .foto-layar
       display: block
       +size(220px 300px)
-      //min-width: 316px
       margin-right: auto
       pointer-events: none
 
@@ -76,13 +76,16 @@
     .isi-layar
       +flex-wrap(wrap)
       +size(auto)
+      margin-bottom: 0px
 
       .foto-layar
         width: 100%
+        height: 200px
 
       .desc-layar
         width: 100%
-        height: 200px
+        font-size: 20px
+        //height: 200px
 
 //.kontrol
 //  +position(absolute, 0px 0px 0px 0px)
