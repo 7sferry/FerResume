@@ -1,0 +1,70 @@
+.sectionabu
+  background-color: lightgray
+  text-align: center
+
+.grup-project
+  max-width: 900px
+  margin: 0px auto
+  padding-bottom: 100px
+  +clearfix
+
+  .daftar-project
+    z-index: 2
+    display: block
+    width: 33%
+    height: 250px
+    float: left
+    position: relative
+
+
+
+    background:
+      position: center center
+      repeat: no-repeat
+      size: 100% 100%
+
+    .anim-project
+      opacity: 0
+
+
+      strong
+        display: block
+        margin: 50px auto 37px
+        text-align: center
+        color: white
+        font-size: 18px
+        line-height: 1
+        letter-spacing: 0.09em
+        text-transform: uppercase
+
+      .ikon-project
+        display: block
+        margin: auto
+        background:
+          size: 100%
+          repeat: no-repeat
+        +size(75px)
+
+
+
+    &:hover
+      z-index: 3
+      .anim-project
+        @extend %jelly
+        +position(absolute, 0% 0 0 0)
+        height: 100%
+        background: fade-out($teks, 0.1)
+        cursor: progress
+        opacity: 1
+
+
+@media screen and (max-width: 570px)
+  .grup-project
+    .daftar-project
+      width: 50%
+      height: 200px
+      .anim-project
+        strong
+          font-size: 15px
+        .ikon-project
+          +size(50px)

@@ -1,0 +1,73 @@
+
+# judul besar
+title: Ferry Suhandri
+email: 'ferferfx@gmail.com'
+desc: Methodical // Responsible // Detail-Oriented
+bio:
+- {isi: '<strong>A fresh graduate</strong>
+ with IT background who has commitment and high passion on IT,
+  eager to get a new challenge,
+   and able to work in team or individually.'}
+- {isi: '<strong>Actively looking for</strong>
+ software engineering position with ambitious company that can offer development training,
+  project based learning and a mentoring programme.'}
+
+
+#skill
+skill:
+- {nama: Programming, nilai: 8}
+- {nama: Learning, nilai: 10}
+- {nama: web design, nilai: 6}
+- {nama: planning, nilai: 6}
+- {nama: English, nilai: 7}
+- {nama: Logical Thinking, nilai: 9}
+- {nama: Analysis, nilai: 6}
+- {nama: Problem Solving, nilai: 7}
+
+#menu menu
+menu:
+- {nama: about-me}
+- {nama: projects}
+- {nama: certificates}
+- {nama: contact}
+
+# daftar proyek
+projects:
+- {nama: Daycare Client Server - VB .Net, gambar: 'daycare.jpg', ikon: vb.png}
+- {nama: Web Design - HTML5 Sass javascript, gambar: 'cv.jpg', ikon: html5.png}
+- {nama: Informasi Lalu Lintas - PHP, gambar: 'lantas.jpg', ikon: php.png}
+- {nama: Digital Painting - Photoshop, gambar: 'painting.jpg', ikon: photoshop.png}
+- {nama: Grafik Kondisi Ruangan - PHP, gambar: 'suhu.jpg', ikon: php.png}
+- {nama: Tempat Penitipan Anak - VB .Net, gambar: 'tpa.jpg', ikon: vb.png}
+
+#dokumen
+dokumen:
+- {img: Oracle.jpg, ikon: oracle-ikon.png,
+teks: '<strong>Badan Nasional Sertifikasi Profesi</strong><br><em>Certificate of Competence</em><br>Oracle Database Programming'}
+- {img: SAP.jpg, ikon: sap-ikon.png,
+teks: '<strong>SAP Edugate</strong><br><em>Certificate of Accomplishment</em><br>BC400 - Introduction to the ABAP Workbench'}
+- {img: Toefl.jpg, ikon: toefl-ikon.png,
+teks: '<strong>UPT Bahasa</strong><br><em>English Proficiency Test Result</em><br>Score: 457'}
+- {img: Poltekpos.jpg, ikon: poltekpos-ikon.png,
+teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Diploma Teknik Informatik</em>a<br>GPA: 3.47/4.00'}
+- {img: Tekmira.jpg, ikon: tekmira-ikon.png,
+teks: '<strong>Puslitbang tekMIRA</strong><br><em>Kunjungan Industri</em><br>'}
+
+#socmed
+media:
+- {link: 'https://www.facebook.com/7sferry', nama: facebook.png}
+- {link: 'https://github.com/7sferry', nama: github.png}
+- {link: 'https://www.linkedin.com/in/ferry-suhandri-094859130/', nama: in.png}
+- {link: '#contact', nama: whatsapp.png, alert: 'swal({
+                                                   title: "Lets Talk!",
+                                                   text: "+62 853 5545 2155",
+                                                   imageUrl: "assets/img/sosmed/whatsapp.png"
+                                                 });'}
+#- {link: 'http://facebook.com/7sferry', nama: whatsapp.png}
+#- {link: 'http://facebook.com/7sferry', nama: whatsapp.png}
+#- {link: 'http://facebook.com/7sferry', nama: whatsapp.png}
+#- {link: 'http://facebook.com/7sferry', nama: whatsapp.png}
+#- {link: 'http://facebook.com/7sferry', nama: whatsapp.png}
+#- {link: 'http://facebook.com/7sferry', nama: whatsapp.png}
+#- {link: 'http://facebook.com/7sferry', nama: whatsapp.png}
+#- {link: 'http://facebook.com/7sferry', nama: google}

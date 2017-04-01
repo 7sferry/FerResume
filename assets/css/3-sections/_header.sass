@@ -1,0 +1,102 @@
+
+header
+  height: 370px
+  @extend %bg
+
+  .fix
+    z-index: 99
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    background: #2b2b2b
+    height: 50px
+
+    .logo
+
+      float: left
+      margin: 10px 0 0 26px
+      svg
+        +size(33px)
+      path
+        fill: rgba(252,252,252,0.3)
+
+
+    nav
+      float: right
+      margin: 10px 30px 0 0
+      a
+        display: inline-block
+        margin-left: 26px
+
+        @extend %menutebal
+
+    .menu-hp
+      @extend %sway
+
+  h1
+    span
+      display: inline-block
+      padding: 0.2em 0.5em
+      border: white solid 10px
+        radius: 10%
+
+    text-align: center
+    font:
+      family: tai le
+      size: 72px
+      weight: bold
+    color: white
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    margin-bottom: 14px
+    clear: both
+    padding-top: 100px
+
+  .deskrip
+    text-align: center
+    font:
+      family: "tai le"
+      size: 14px
+      weight: bold
+    text-transform: uppercase
+    letter-spacing: 0.07em
+    color: white
+    line-height: 1
+
+@media  screen and (max-width: 570px)
+  header
+    .fix
+      nav
+        float: none
+        margin: 50px auto 0
+        max-height: 0
+        overflow: hidden
+        z-index: 98
+        a
+          margin-left: 0px
+          background-color: #2b2b2b
+          display: block
+          text-align: center
+          border-top: 1px solid #57544e
+          border-bottom: 1px solid #312e2a
+
+      .burger
+        display: block
+        cursor: pointer
+        margin: 10px 30px 0 0
+        +size(33px)
+        float: right
+        background:
+          image: url("assets/img/burger.png")
+          size: cover
+
+      .menu-hp
+        max-height: 100px
+
+//
+//@media  screen and (min-width: 570px)
+//  header
+//    .fix
+//      nav
+//        display: block

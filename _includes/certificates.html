@@ -1,0 +1,36 @@
+<section class="section4">
+    <h3 id="certificates">Certificates</h3>
+    <!--<div class="kontrol">-->
+        <!--<div class="prev">{% include icons/prev.html %}</div>-->
+        <!--<div class="next">{% include icons/next.html %}</div>-->
+    <!--</div>-->
+
+    <div data-aos="fade" data-aos-easing="ease-out-sine" class="layar">
+{% for a in site.data.set.dokumen %}
+        <div class="isi-layar">
+            <!--<div class="foto-layar">-->
+                <img class="foto-layar" src="assets/img/dok/{{a.img}}">
+            <!--</div>-->
+            <div class="desc-layar">
+                <p>{{a.teks}}</p>
+            </div>
+        </div>
+{% endfor %}
+    </div>
+
+
+    <div data-aos="flip-up" data-aos-easing="ease-out-sine" class="logo-doc">
+        {% for a in site.data.set.dokumen %}
+        <img class="ikon-doc" src="assets/img/dok/{{ a.ikon }}" align="{{ a.ikon }}">
+        {% endfor %}
+
+    </div>
+
+    <div data-aos="flip-up" data-aos-easing="ease-out-sine" class="tombol-hp">
+        {% for a in site.data.set.dokumen %}
+        <div class="tombol" ></div>
+        {% endfor %}
+
+    </div>
+
+</section>

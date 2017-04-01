@@ -1,0 +1,79 @@
++font-face(tai le, '../../assets/font/taile')
+
+.foto
+  max-width: 800px
+  +display(flex)
+  margin: auto
+  +align-items(center)
+  //+justify-content(space-around)
+  background: url(../../assets/img/foto.png)
+    size: cover
+  +size(200px)
+  border-radius: 50%
+  order: 3
+
+.bio
+
+  .isi-bio
+    display: none
+    @extend %paragraf
+
+    &.bio-aktif
+      @extend %swoosh
+      display: block
+
+
+
+.skill
+  display: block
+  max-width: 600px
+  margin: 25px auto
+  color: $teks
+  padding-left: 10%
+  +clearfix
+  //justify-content: space-between
+
+  .daftar-skill
+    width: 50%
+    float: left
+
+  .ikon-skill
+    font-size: 0px
+    margin-bottom: 30px
+
+    span
+      display: inline-block
+      width: 20px
+      height: 14px
+      background-color: $judul
+      margin-right: 0px
+      margin-top: 5px
+
+
+    //&.val8 span:nth-child(n+9)
+    //  background: gray
+
+    @for $a from 1 through 10
+      &.val#{$a} span:nth-child(n+#{$a+1})
+        @extend %skill
+
+@media screen and (max-width: 630px)
+  .bio
+
+    .isi-bio
+
+      &.bio-aktif
+        width: 100%
+        margin-bottom: 150px
+
+  .skill
+    padding-left: 15%
+    //margin-top: 100px
+
+    .daftar-skill
+
+      .ikon-skill
+        width: 100%
+
+        span
+          width: 10px

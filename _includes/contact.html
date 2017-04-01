@@ -1,0 +1,10 @@
+<section class="sectionabu"  >
+
+    <h3 id="contact">Contact</h3>
+    <div data-aos="zoom-in" data-aos-easing="ease-in-out-sine" class="sosmed" >
+        {% for a in site.data.set.media %}
+        <a onclick='{{a.alert}}' href="{{a.link}}"><img class="ikon-sosmed" src="assets/img/sosmed/{{a.nama}}" align="{{a.nama}}"></a>
+        {% endfor %}
+    </div>
+    <a data-aos="fade-right" data-aos-easing="ease-in-out-quad" class="email" href="mailto:{{site.data.set.email}}">{{site.data.set.email}}</a>
+</section>
