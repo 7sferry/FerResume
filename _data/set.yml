@@ -59,6 +59,8 @@ teks: '<strong>UPT Bahasa</strong><br><em>English Proficiency Test Result</em><b
 teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Diploma Teknik Informatik</em>a<br>GPA: 3.47/4.00'}
 - {img: tekmira.jpg, ikon: tekmira-ikon.png,
 teks: '<strong>Puslitbang tekMIRA</strong><br><em>Kunjungan Industri</em><br>'}
+- {img: public.jpg, ikon: poltekpos-ikon.png,
+teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Public Speaking</em><br>'}
 
 #socmed
 media:
@@ -66,7 +68,7 @@ media:
 - {link: 'https://github.com/7sferry', nama: github.png}
 - {link: 'https://www.linkedin.com/in/ferry-suhandri-094859130/', nama: in.png}
 - {link: '#contact', nama: whatsapp.png, alert: 'swal({
-                                                   title: "Lets Talk!",
+                                                   title: "Let&apos;s Talk!",
                                                    text: "+62 853 5545 2155",
                                                    imageUrl: "assets/img/sosmed/whatsapp.png"
                                                  });'}
