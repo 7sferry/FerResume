@@ -70,7 +70,7 @@ media:
 - {link: '#contact', nama: whatsapp.png, alert: 'swal({
                                                    title: "Let&apos;s Talk!",
                                                    text: "+62 853 5545 2155",
-                                                   imageUrl: "assets/img/sosmed/whatsapp.png"
+                                                   imageUrl: "../assets/img/sosmed/whatsapp.png"
                                                  });'}
 #- {link: 'http://facebook.com/7sferry', nama: whatsapp.png}
 #- {link: 'http://facebook.com/7sferry', nama: whatsapp.png}
