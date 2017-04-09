@@ -56,7 +56,7 @@ teks: '<strong>SAP Edugate</strong><br><em>Certificate of Accomplishment</em><br
 - {img: toefl.jpg, ikon: toefl-ikon.png,
 teks: '<strong>UPT Bahasa</strong><br><em>English Proficiency Test Result</em><br>Score: 457'}
 - {img: poltekpos.jpg, ikon: poltekpos-ikon.png,
-teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Diploma Teknik Informatik</em>a<br>GPA: 3.47/4.00'}
+teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Diploma Teknik Informatika</em><br>GPA: 3.47/4.00'}
 - {img: tekmira.jpg, ikon: tekmira-ikon.png,
 teks: '<strong>Puslitbang tekMIRA</strong><br><em>Kunjungan Industri</em><br>'}
 - {img: public.jpg, ikon: poltekpos-ikon.png,
