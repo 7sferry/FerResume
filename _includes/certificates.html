@@ -6,7 +6,7 @@
 {% for a in site.data.set.dokumen %}
         <div class="isi-layar">
             <!--<div class="foto-layar">-->
-                <img class="foto-layar" src="assets/img/dok/{{a.img}}">
+                <img class="foto-layar" src="../assets/img/dok/{{a.img}}">
             <!--</div>-->
             <div class="desc-layar">
                 <p>{{a.teks}}</p>
@@ -18,7 +18,7 @@
 
     <div data-aos="flip-up" data-aos-easing="ease-out-sine" class="logo-doc">
         {% for a in site.data.set.dokumen %}
-        <img class="ikon-doc" src="assets/img/dok/{{ a.ikon }}" align="{{ a.ikon }}">
+        <img class="ikon-doc" src="../assets/img/dok/{{ a.ikon }}" align="{{ a.ikon }}">
         {% endfor %}
 
     </div>
