@@ -1,6 +1,12 @@
 <header>
-    
-    <h1 ><span data-aos="zoom-out" data-aos-easing="ease-in-out-quart">{{ site.data.set.title }}</span></h1>
-    <p data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000" class="deskrip">{{ site.data.set.desc }}</p>
+    <div class="fix">
+        <div class="logo"><a href="#home">{% include /icons/logo.html %}</a></div>
+        <div class="burger" onclick="togglemenu();"></div>
+        <nav id="navigasi">
+            {% for nav in site.data.set.menu %}
+            <a href="#{{ nav.nama }}">{{ nav.nama }}</a>
+            {% endfor %}
+        </nav>
+    </div>
 
 </header>
