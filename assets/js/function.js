@@ -74,7 +74,7 @@ function sertifikat() {
         //         $('.logo-aktif').removeClass('logo-aktif').prev().addClass('logo-aktif');
         //     }
         // }
-    }, 5000);
+    }, 7000);
 // }
 
 function bio() {

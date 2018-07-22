@@ -2,7 +2,7 @@
 icon: 'me.png'
 title: Ferry Suhandri
 mail: '7sferry@gmail.com'
-desc: 'Doing What Should Be Done'
+desc: 'Done What Should Be Done'
 
 deskripsiseo: 'Ferry Suhandri Solok Sumatera Barat Minang Minangkabau Sikumbang'
 author: 'https://facebook.com/7sferry'
@@ -31,18 +31,18 @@ skill:
 #menu menu
 menu:
 - {nama: about-me}
-- {nama: projects}
+- {nama: Technical skills}
 - {nama: certificates}
 - {nama: contact}
 
 # daftar proyek
 projects:
-- {nama: Rest-API, gambar: 'daycare.jpg', ikon: api.png}
+- {nama: Java Enterprise - Spring Struts Mybatis, gambar: 'lantas.jpg', ikon: java.png}
 - {nama: Web Design - HTML5 Sass javascript, gambar: 'cv.jpg', ikon: html5.png}
-- {nama: Java Enterprise Edition, gambar: 'lantas.jpg', ikon: java.png}
+- {nama: Database - Postgresql MySQL Oracle, gambar: 'pgadmin.png', ikon: sql.png}
 - {nama: Digital Painting - Photoshop, gambar: 'painting.jpg', ikon: photoshop.png}
-- {nama: SQL Database, gambar: 'suhu.jpg', ikon: sql.png}
-- {nama: Versioning Control, gambar: 'tpa.jpg', ikon: git.png}
+- {nama: Versioning Control - Tortoise GIT, gambar: 'git.png', ikon: versioning.png}
+- {nama: Cloud Server - Linux Windows, gambar: 'aws-windows-server.png', ikon: cloud.png}
 
 #dokumen
 dokumen:
@@ -54,8 +54,8 @@ teks: '<strong>SAP Edugate</strong><br><em>Certificate of Accomplishment</em><br
 teks: '<strong>UPT Bahasa</strong><br><em>English Proficiency Test Result</em><br>Score: 457'}
 # - {img: poltekpos.jpg, ikon: poltekpos-ikon.png,
 # teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Diploma Teknik Informatika</em><br>GPA: 3.47/4.00'}
-- {img: tekmira.jpg, ikon: tekmira-ikon.png,
-teks: '<strong>Puslitbang tekMIRA</strong><br><em>Kunjungan Industri</em><br>'}
+- {img: busuu.png, ikon: busuu_logo.png,
+teks: '<strong>Level A2 in English on Busuu</strong><br><em>Certificate of Level Completion</em><br>Score: A- (90%)'}
 - {img: public.jpg, ikon: poltekpos-ikon.png,
 teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Public Speaking</em><br>'}
 
