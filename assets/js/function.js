@@ -3,15 +3,15 @@
  * Created by SIKUMBANG on 28/03/2017.
  */
 $(function() {
-    smoothScroll(1500);
+    smoothScroll(2000);
     sertifikat();
+    // autosertifikat(5000);
     $("header h1").fitText(1, { minFontSize: '10px', maxFontSize: '72px' });
     $(".email").fitText(1.5);
-    autosertifikat(5000);
-    autobio(5000);
+    autobio(7000);
     bio();
     AOS.init({
-        duration: 1200
+        duration: 1500
     })
 });
 
@@ -36,6 +36,8 @@ function sertifikat() {
     $('.tombol').first().addClass('logo-aktif');
 
     $('.ikon-doc, .tombol').click(function () {
+      autosertifikat.stop();
+      autosertifikat.start();
         var $saudara = $(this).parent().children(),
             $posisi = $saudara.index($(this));
 
@@ -45,9 +47,9 @@ function sertifikat() {
     });
 }
 
-function autosertifikat(durasi) {
+// function autosertifikat(durasi) {
     // $('.next, .prev').click
-    setInterval(function () {
+  var autosertifikat = new Timer(function () {
         var logoygaktif = $('.layar').find('.logo-aktif'),
             posisi = $('.layar').children().index(logoygaktif),
             jumlahlogo = $('.isi-layar').length;
@@ -72,8 +74,8 @@ function autosertifikat(durasi) {
         //         $('.logo-aktif').removeClass('logo-aktif').prev().addClass('logo-aktif');
         //     }
         // }
-    }, durasi);
-}
+    }, 5000);
+// }
 
 function bio() {
     $('.isi-bio').first().addClass('bio-aktif');
@@ -138,4 +140,31 @@ function autobio(durasi) {
 function togglemenu() {
     var menu = document.getElementById('navigasi');
     menu.classList.toggle('menu-hp');
+}
+
+function Timer(fn, t) {
+    var timerObj = setInterval(fn, t);
+
+    this.stop = function() {
+        if (timerObj) {
+            clearInterval(timerObj);
+            timerObj = null;
+        }
+        return this;
+    }
+
+    // start timer using current settings (if it's not already running)
+    this.start = function() {
+        if (!timerObj) {
+            this.stop();
+            timerObj = setInterval(fn, t);
+        }
+        return this;
+    }
+
+    // start with new interval, stop current interval
+    this.reset = function(newT) {
+        t = newT;
+        return this.stop().start();
+    }
 }

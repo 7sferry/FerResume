@@ -1,34 +1,32 @@
-
 # judul besar
 icon: 'me.png'
 title: Ferry Suhandri
 mail: '7sferry@gmail.com'
-desc: '| Methodical <=> Responsible <=> Detail-Oriented |'
+desc: 'Doing What Should Be Done'
 
-deskripsiseo: 'Ferry Suhandri'
+deskripsiseo: 'Ferry Suhandri Solok Sumatera Barat Minang Minangkabau Sikumbang'
 author: 'https://facebook.com/7sferry'
 publisher: 'https://facebook.com/7sferry'
 
 
 bio:
-- {isi: '<strong>A fresh graduate</strong>
- with IT background who passionate in IT aspects, especially about programming and web designing, eager to get a new challenge, love learning, and able to work in team or individually.
+- {isi: '<strong>A Software Engineer</strong>
+ who likes problem solving, eager to get a new challenge & reach goals, love learning and able to work in team or individually.
 '}
-- {isi: '<strong>Actively looking for</strong>
- software engineering position with ambitious company that can offer development training,
-  project based learning and a mentoring programme.'}
+- {isi: '<strong>Strongly qualified individual</strong>
+ with experienced working in IT company as Sofware Developer and skilled at web programming & logical thinking'}
 
 
 #skill
 skill:
 - {nama: Programming, nilai: 8}
 - {nama: Learning, nilai: 10}
-- {nama: Web Design, nilai: 6}
-- {nama: Planning, nilai: 6}
-- {nama: English, nilai: 7}
+- {nama: Web Design, nilai: 7}
+- {nama: Planning, nilai: 7}
+- {nama: English, nilai: 8}
 - {nama: Logical Thinking, nilai: 9}
-- {nama: Analysis, nilai: 6}
-- {nama: Problem Solving, nilai: 7}
+- {nama: Analysis, nilai: 7}
+- {nama: Problem Solving, nilai: 8}
 
 #menu menu
 menu:
@@ -39,12 +37,12 @@ menu:
 
 # daftar proyek
 projects:
-- {nama: Daycare Client Server - VB .Net, gambar: 'daycare.jpg', ikon: vb.png}
+- {nama: Rest-API, gambar: 'daycare.jpg', ikon: api.png}
 - {nama: Web Design - HTML5 Sass javascript, gambar: 'cv.jpg', ikon: html5.png}
-- {nama: Informasi Lalu Lintas - PHP, gambar: 'lantas.jpg', ikon: php.png}
+- {nama: Java Enterprise Edition, gambar: 'lantas.jpg', ikon: java.png}
 - {nama: Digital Painting - Photoshop, gambar: 'painting.jpg', ikon: photoshop.png}
-- {nama: Grafik Kondisi Ruangan - PHP, gambar: 'suhu.jpg', ikon: php.png}
-- {nama: Tempat Penitipan Anak - VB .Net, gambar: 'tpa.jpg', ikon: vb.png}
+- {nama: SQL Database, gambar: 'suhu.jpg', ikon: sql.png}
+- {nama: Versioning Control, gambar: 'tpa.jpg', ikon: git.png}
 
 #dokumen
 dokumen:
@@ -54,8 +52,8 @@ teks: '<strong>Badan Nasional Sertifikasi Profesi</strong><br><em>Certificate of
 teks: '<strong>SAP Edugate</strong><br><em>Certificate of Accomplishment</em><br>BC400 - Introduction to the ABAP Workbench'}
 - {img: toefl.jpg, ikon: toefl-ikon.png,
 teks: '<strong>UPT Bahasa</strong><br><em>English Proficiency Test Result</em><br>Score: 457'}
-- {img: poltekpos.jpg, ikon: poltekpos-ikon.png,
-teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Diploma Teknik Informatika</em><br>GPA: 3.47/4.00'}
+# - {img: poltekpos.jpg, ikon: poltekpos-ikon.png,
+# teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Diploma Teknik Informatika</em><br>GPA: 3.47/4.00'}
 - {img: tekmira.jpg, ikon: tekmira-ikon.png,
 teks: '<strong>Puslitbang tekMIRA</strong><br><em>Kunjungan Industri</em><br>'}
 - {img: public.jpg, ikon: poltekpos-ikon.png,
@@ -71,3 +69,4 @@ media:
                                                    text: "+62 853 5545 2155",
                                                    imageUrl: "../assets/img/sosmed/whatsapp.png"
                                                  });'}
+- {link: 'http://www.mrferry.co.vu', nama: blogger.png}
