@@ -6,7 +6,7 @@ desc: 'Done What Should Be Done'
 
 deskripsiseo: 'Ferry Suhandri Solok Sumatera Barat Minang Minangkabau Sikumbang'
 author: 'https://facebook.com/7sferry'
-publisher: 'https://facebook.com/7sferry'
+publisher: 'facebook.com/7sferry'
 
 
 bio:
@@ -31,13 +31,13 @@ skill:
 #menu menu
 menu:
 - {nama: about-me}
-- {nama: Technical skills}
+- {nama: Technical-skills}
 - {nama: certificates}
 - {nama: contact}
 
 # daftar proyek
 projects:
-- {nama: Java Enterprise - Spring Struts Mybatis, gambar: 'lantas.jpg', ikon: java.png}
+- {nama: Java Enterprise - Spring Struts Mybatis, gambar: 'java.jpg', ikon: java.png}
 - {nama: Web Design - HTML5 Sass javascript, gambar: 'cv.jpg', ikon: html5.png}
 - {nama: Database - Postgresql MySQL Oracle, gambar: 'pgadmin.png', ikon: sql.png}
 - {nama: Digital Painting - Photoshop, gambar: 'painting.jpg', ikon: photoshop.png}
