@@ -2,7 +2,7 @@
 icon: 'me.png'
 title: Ferry Suhandri
 mail: '7sferry@gmail.com'
-desc: 'Done What Should Be Done'
+desc: 'The Duty Fulfiller'
 
 deskripsiseo: 'Ferry Suhandri Solok Sumatera Barat Minang Minangkabau Sikumbang'
 author: 'https://facebook.com/7sferry'
@@ -69,4 +69,4 @@ media:
                                                    text: "+62 853 5545 2155",
                                                    imageUrl: "../assets/img/sosmed/whatsapp.png"
                                                  });'}
-- {link: 'http://www.mrferry.co.vu', nama: blogger.png}
+- {link: 'http://www.mrferry.co.vu/?m=0', nama: blogger.png}
