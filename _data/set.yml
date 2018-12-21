@@ -2,7 +2,12 @@
 icon: 'me.png'
 title: Ferry Suhandri
 mail: '7sferry@gmail.com'
-desc: 'The Duty Fulfiller'
+desc:
+- {warna: green, tagline: ' Software Engineer'}
+- {warna: belize, tagline: ' Fast Learner'}
+- {warna: pomegranate, tagline: ' Hardworker'}
+- {warna: wisteria, tagline: ' Logical Thinker'}
+- {warna: midnight, tagline: ' Problem Solver'}
 
 deskripsiseo: 'Ferry Suhandri Solok Sumatera Barat Minang Minangkabau Sikumbang'
 author: 'https://facebook.com/7sferry'

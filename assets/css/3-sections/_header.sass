@@ -1,3 +1,4 @@
++font-face(pacifico, '../../assets/font/pacifico')
 
 header
   height: 370px
@@ -44,12 +45,12 @@ header
 
     text-align: center
     font:
-      family: tai le
+      family: pacifico
       size: 72px
-      weight: bold
+      //weight: bold
     color: white
-    text-transform: uppercase
-    letter-spacing: 0.05em
+    //text-transform: uppercase
+    letter-spacing: 0.03em
     margin-bottom: 14px
     clear: both
     padding-top: 100px
@@ -57,13 +58,65 @@ header
   .deskrip
     text-align: center
     font:
-      family: "tai le"
-      size: 14px
+      family: "pacifico"
+      size: 24px
       weight: bold
-    text-transform: uppercase
+    //text-transform: uppercase
     letter-spacing: 0.07em
     color: white
     line-height: 1
+    width: 90%
+
+    .word
+      position: absolute
+      //width: 250px
+      opacity: 0
+      white-space: pre-wrap
+
+
+  .letter
+    display: inline-block
+    position: relative
+    float: left
+    -webkit-transform: translateZ(25px)
+      transform: translateZ(25px)
+    -webkit-transform-origin: 50% 50% 25px
+      transform-origin: 50% 50% 25px
+
+  .letter.out
+    -webkit-transform: rotateX(90deg)
+      transform: rotateX(90deg)
+    -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+    transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+
+  .letter.behind
+    -webkit-transform: rotateX(-90deg)
+      transform: rotateX(-90deg)
+
+  .letter.in
+    -webkit-transform: rotateX(0deg)
+      transform: rotateX(0deg)
+    -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+
+  .wisteria
+    color: #8e44ad
+
+  .belize
+    color: #2980b9
+
+  .pomegranate
+    color: #c0392b
+
+  .green
+    color: #16a085
+
+  .midnight
+    color: #ffde03
 
 @media  screen and (max-width: 570px)
   header
