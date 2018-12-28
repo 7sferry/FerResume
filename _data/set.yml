@@ -35,9 +35,9 @@ skill:
 
 #menu menu
 menu:
-- {nama: about-me}
-- {nama: Technical-skills}
-- {nama: certificates}
+- {nama: about}
+- {nama: Technical}
+- {nama: experiences}
 - {nama: contact}
 
 # daftar proyek
@@ -47,7 +47,7 @@ projects:
 - {nama: Database - Postgresql MySQL Oracle, gambar: 'pgadmin.png', ikon: sql.png}
 - {nama: Digital Painting - Photoshop, gambar: 'painting.jpg', ikon: photoshop.png}
 - {nama: Versioning Control - Tortoise GIT, gambar: 'git.png', ikon: versioning.png}
-- {nama: Cloud Server - Linux Windows, gambar: 'aws-windows-server.png', ikon: cloud.png}
+- {nama: Operating System - Linux Windows, gambar: 'aws-windows-server.png', ikon: cloud.png}
 
 #dokumen
 dokumen:

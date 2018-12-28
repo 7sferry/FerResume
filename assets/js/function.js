@@ -38,7 +38,7 @@ function initBubbles() {
 function createBubble() {
     var circleContainer = document.createElement('div');
     circleContainer.classList.add('circle_container');
-    circleContainer.style.transform = "rotate(" + Math.floor(Math.random() * 360) + "deg)";
+    circleContainer.style.transform = "rotate(" + Math.floor(Math.random() * -180) + "deg)";
 
     var circle = createCircle();
     circleContainer.appendChild(circle);
