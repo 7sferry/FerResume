@@ -1,0 +1,30 @@
+
+<section class="sectionabu">
+
+    <h3 id="{{site.data.set.menu[1].nama}}">{{site.data.set.menu[1].nama}}</h3>
+    <div data-aos="fade-down-right" data-aos-easing="ease-in-sine" class="timeline">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {% for work in site.data.set.experiences %}
+                <div class="swiper-slide" style="background-image: url('../../assets/img/experiences/{{work.gambar}}')" data-year="{{work.tahun}}">
+                    <div class="swiper-slide-content"><span class="timeline-year">{{work.tahun}}</span>
+                        <h4 class="timeline-title">{{work.tempat}}</h4>
+                        <p class="timeline-text">{{work.ket}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+                <!--<div class="swiper-slide" style="background-image: url(http://127.0.0.1:9999/assets/img/dok/busuu.png" data-year="2012">-->
+                    <!--<div class="swiper-slide-content"><span class="timeline-year">2012</span>-->
+                        <!--<h4 class="timeline-title">Our nice super title</h4>-->
+                        <!--<p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+</section>
