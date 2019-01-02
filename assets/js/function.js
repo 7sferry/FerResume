@@ -4,8 +4,7 @@
  */
 $(function() {
     smoothScroll(2000);
-    sertifikat();
-    // autosertifikat(5000);
+    sertifikat(7000);
     $("header h1").fitText(1, { minFontSize: '10px', maxFontSize: '72px' });
     $(".email").fitText(1.5);
     autobio(7000);
@@ -25,7 +24,6 @@ var bubbleLifeTime = 3;
 var noOfBubbles = 15;
 
 var wrapper = document.querySelector('h1');
-var bubbles = [];
 
 
 function initBubbles() {
@@ -73,14 +71,14 @@ function smoothScroll (duration) {
     });
 }
 
-function sertifikat() {
+function sertifikat(durasi) {
     $('.isi-layar').first().addClass('logo-aktif');
     $('.ikon-doc').first().addClass('logo-aktif');
     $('.tombol').first().addClass('logo-aktif');
 
     $('.ikon-doc, .tombol').click(function () {
-      autosertifikat.stop();
-      autosertifikat.start();
+      autosertifikat(durasi).stop();
+      autosertifikat(durasi).start();
         var $saudara = $(this).parent().children(),
             $posisi = $saudara.index($(this));
 
@@ -90,15 +88,11 @@ function sertifikat() {
     });
 }
 
-// function autosertifikat(durasi) {
-    // $('.next, .prev').click
-  var autosertifikat = new Timer(function () {
+function autosertifikat(durasi) {
+  return new Timer(function () {
         var logoygaktif = $('.layar').find('.logo-aktif'),
             posisi = $('.layar').children().index(logoygaktif),
             jumlahlogo = $('.isi-layar').length;
-        // console.log(posisi, jumlahlogo);
-
-        // if($(this).hasClass('next')) {
         if(posisi == jumlahlogo -1) {
             $('.isi-layar').removeClass('logo-aktif').first().addClass('logo-aktif');
             $('.ikon-doc').removeClass('logo-aktif').first().addClass('logo-aktif');
@@ -107,18 +101,8 @@ function sertifikat() {
             $('.logo-aktif').removeClass('logo-aktif').next().addClass('logo-aktif');
 
         }
-        // } else {
-        //     if(posisi === 0){
-        //
-        //         $('.isi-layar').removeClass('logo-aktif').last().addClass('logo-aktif');
-        //         $('.ikon-doc').removeClass('logo-aktif').last().addClass('logo-aktif');
-        //     } else {
-        //
-        //         $('.logo-aktif').removeClass('logo-aktif').prev().addClass('logo-aktif');
-        //     }
-        // }
-    }, 7000);
-// }
+    }, durasi);
+}
 
 function bio() {
     $('.isi-bio').first().addClass('bio-aktif');
@@ -129,9 +113,6 @@ function autobio(durasi) {
         var logoygaktif = $('.bio').find('.bio-aktif'),
             posisi = $('.bio').children().index(logoygaktif),
             jumlahlogo = $('.isi-bio').length;
-        // console.log(posisi, jumlahlogo);
-
-        // if($(this).hasClass('next')) {
         if(posisi == jumlahlogo -1) {
             $('.isi-bio').removeClass('bio-aktif').first().addClass('bio-aktif');
         } else {
@@ -173,12 +154,6 @@ function autobio(durasi) {
     };
 
 })( jQuery );
-
-// function togglemenu() {
-//     $('.burger').click(function () {
-//         $('#navigasi').slideToggle();
-//     })
-// }
 
 function togglemenu() {
     var menu = document.getElementById('navigasi');
@@ -261,11 +236,9 @@ function splitLetters(word) {
     wordArray.push(letters);
 }
 
-changeWord();
-
 function swiping() {
 
-    var timelineSwiper = new Swiper ('.timeline .swiper-container', {
+    return new Swiper ('.timeline .swiper-container', {
         direction: 'vertical',
         loop: false,
         speed: 1600,
