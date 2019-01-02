@@ -69,7 +69,6 @@
       margin-bottom: 50px
       -webkit-transform: translate3d(20px, 0, 0)
       transform: translate3d(20px, 0, 0)
-      color: #d4a024
       font-weight: 300
       opacity: 0
       transition: .2s ease .4s
@@ -127,9 +126,10 @@
     text-align: center
     opacity: 1
     background: transparent
-    color: #d4a024
+    color: $gold
     margin: 15px 0 !important
     position: relative
+    font-family: "tai le"
     &::before
       content: ""
       position: absolute
@@ -138,12 +138,12 @@
       width: 6px
       height: 6px
       border-radius: 100%
-      background-color: #d4a024
+      background-color: $gold
       -webkit-transform: scale(0)
       transform: scale(0)
       transition: .2s
   .swiper-pagination-bullet-active
-    color: #d4a024
+    color: $gold
     &::before
       -webkit-transform: scale(1)
       transform: scale(1)
@@ -198,6 +198,7 @@
       .timeline-title
         font-size: 32px
         margin: 0
+        color: $gold
     .swiper-pagination
       display: flex
     .swiper-button-prev
