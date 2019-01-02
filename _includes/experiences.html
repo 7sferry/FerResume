@@ -6,7 +6,7 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 {% for work in site.data.set.experiences %}
-                <div class="swiper-slide" style="background-image: url('../../assets/img/experiences/{{work.gambar}}')" data-year="{{work.tahun}}">
+                <div class="swiper-slide" data-swiper-autoplay="10000" style="background-image: url('../../assets/img/experiences/{{work.gambar}}')" data-year="{{work.tahun}}">
                     <div class="swiper-slide-content"><span class="timeline-year">{{work.tahun}}</span>
                         <h4 class="timeline-title">{{work.tempat}}</h4>
                         <p class="timeline-text">{{work.ket}}</p>

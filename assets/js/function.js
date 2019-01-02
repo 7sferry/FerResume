@@ -239,6 +239,8 @@ function splitLetters(word) {
 function swiping() {
 
     return new Swiper ('.timeline .swiper-container', {
+        autoplay: true,
+        autoplayDisableOnInteraction: false,
         direction: 'vertical',
         loop: false,
         speed: 1600,
