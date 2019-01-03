@@ -5,7 +5,7 @@ mail: '7sferry@gmail.com'
 desc:
 - {warna: green, tagline: ' Software Engineer'}
 - {warna: belize, tagline: ' Fast Learner'}
-- {warna: pomegranate, tagline: ' Hardworker'}
+- {warna: pomegranate, tagline: ' Hardwork Achiever'}
 - {warna: wisteria, tagline: ' Logical Thinker'}
 - {warna: midnight, tagline: ' Problem Solver'}
 
@@ -38,16 +38,17 @@ menu:
 - {nama: about}
 - {nama: experiences}
 - {nama: certificates}
+- {nama: nonprojects}
 - {nama: contact}
 
 # daftar proyek
-projects:
-- {nama: Java Enterprise - Spring Struts Mybatis, gambar: 'java.jpg', ikon: java.png}
-- {nama: Web Design - HTML5 Sass javascript, gambar: 'cv.jpg', ikon: html5.png}
-- {nama: Database - Postgresql MySQL Oracle, gambar: 'pgadmin.png', ikon: sql.png}
-- {nama: Digital Painting - Photoshop, gambar: 'painting.jpg', ikon: photoshop.png}
-- {nama: Versioning Control - Tortoise GIT, gambar: 'git.png', ikon: versioning.png}
-- {nama: Operating System - Linux Windows, gambar: 'aws-windows-server.png', ikon: cloud.png}
+interests:
+#- {nama: Java Enterprise - Spring Struts Mybatis, gambar: 'java.jpg', ikon: java.png}
+- {nama: "Web Programming & Designing", gambar: 'cv.jpg', ikon: html5.png}
+- {nama: "Game Modding", gambar: 'mod.jpg', ikon: game.png}
+- {nama: "Digital Painting", gambar: 'painting.jpg', ikon: photoshop.png}
+#- {nama: Versioning Control - Tortoise GIT, gambar: 'git.png', ikon: versioning.png}
+#- {nama: Operating System - Linux Windows, gambar: 'aws-windows-server.png', ikon: cloud.png}
 
 experiences:
 - {tahun: October 2013, tempat: Politeknik Pos Indonesia, gambar: fotopoltekpos.JPG,
@@ -77,7 +78,7 @@ develop a few features on Rest API for 2 months. Tech used: <b>Spring, Mybatis, 
 PostgreSQL as Database</b>."}
 - {tahun: December 2018, tempat: Alfacart, gambar: alfa.jpg,
 ket: "Deployed to Sumber Trijaya Lestari -<i>one of the biggest retail company in Indonesia</i>-
-to develop Alfacart Back Office apps for 4 months. Tech used: <b>Spring, Mybatis, Tomcat as Application Server and PostgreSQL as Database</b>."}
+to develop Alfacart Back Office apps for 4 months. Tech used: <b>Spring, Mybatis, Jsp/Jstl, Sql2Java, Tomcat as Application Server and PostgreSQL as Database</b>."}
 
 #dokumen
 dokumen:
