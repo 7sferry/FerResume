@@ -59,7 +59,7 @@ ket: "Designed and developed a website for Nusantara Turbin & Propulsi -<i>a com
 engine</i>- to monitor server's temperature for a month internship. Tech used: <b>PHP 5.0 and
 Javascript with MySQL as Database and Apache as Web Server</b>." }
 - {tahun: August 2017, tempat: Indivara Group, gambar: indivara.jpeg,
-ket: "Started my first professional career in Technology Industry at Indivara Group -<i>a holding company of some
+ket: "Started my first professional career in Technology Industry at Indivara Group -<i>a holding company of some IT
 companies in local and overseas</i>- as Graduated Programmer attending some training classes for 5 months included Soft
 Skill and Hard Skill especially Java Enterprise and some frameworks."}
 - {tahun: December 2017, tempat: Pradipta Jatis Indonesia, gambar: pji.jpg,
@@ -79,6 +79,7 @@ PostgreSQL as Database</b>."}
 - {tahun: December 2018, tempat: Alfacart, gambar: alfa.jpg,
 ket: "Deployed to Sumber Trijaya Lestari -<i>one of the biggest retail company in Indonesia</i>-
 to develop Alfacart Back Office apps for 4 months. Tech used: <b>Spring, Mybatis, Jsp/Jstl, Sql2Java, Tomcat as Application Server and PostgreSQL as Database</b>."}
+
 
 #dokumen
 dokumen:
