@@ -107,3 +107,9 @@ media:
                                                    imageUrl: "../assets/img/sosmed/whatsapp.png"
                                                  });'}
 - {link: 'http://www.mrferry.co.vu/?m=0', nama: blogger.png}
+
+menu:
+- {judul: "Resume", link: "resume", ikon: "👷‍♂️", warna1: "ffd817", warna2: "f6a21d",
+konten: "It contains my professional information includes skills, experiences and certificates."}
+- {judul: "Facebook", link: "https://facebook.com/ferry95", ikon: "👦", warna1: "ab6ee5", warna2: "9937ee",
+konten: "My personal social media. I actively using facebook in my free time."}

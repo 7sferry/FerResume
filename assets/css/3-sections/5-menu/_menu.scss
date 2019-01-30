@@ -1,0 +1,188 @@
+$art-w: 32.25em;
+$art-h: 8.75em;
+$art-b: .125em;
+$art-x: .05*$art-w;
+$art-s: 50%;
+$art-r0: calc(var(--i)*var(--q)*#{$art-h});
+$art-r1: calc(var(--i)*var(--p)*#{$art-h});
+$ico-w: 6.5em;
+$hno-w: 7em;
+$hno-b: .375rem;
+$lvl-0-s: 1.25em;
+$lvl-0-f: 2;
+$lvl-1-s: 1.125em;
+$lvl-1-f: 2;
+$col-0: calc(var(--p)*#{$hno-w} + var(--q)*#{$ico-w});
+$col-1: calc(var(--i)*(var(--q)*#{$hno-w} + var(--p)*#{$ico-w}) + var(--j)*2em);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.indexHtml {
+  --i: var(--wide, 1);
+  --j: calc(1 - var(--i));
+  overflow-x: hidden;
+  //background: linear-gradient(to right bottom, #6e6d72, #68696b);
+  $c: rgba(#666, .8);
+  //background:
+  //        linear-gradient($c, $c),
+  //        url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/kreator_rockharz_july_2018.jpg)
+  //        50%/ cover;
+  font: 400 1em/ 1.25
+  koho, trebuchet ms, verdana, century gothic, arial, sans-serif;
+
+  @media (max-width: $art-w + 2*$art-x) {
+    .artikel{
+      grid-template: unset;
+      transform: unset;
+    }
+    .option:after{
+      left: calc(var(--i)*(var(--p)*(100% - 0.375rem) - var(--s)*0.875rem) + var(--j)*25%);
+    }
+
+    .title{
+      margin-top: unset;
+    }
+
+  }
+
+  @media (max-width: 200px) { font-size: .75em }
+}
+
+.body {
+  --i: var(--wide, 1);
+  --j: calc(1 - var(--i));
+  --k: var(--narr, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100%;
+  filter: drop-shadow(0 2px 5px rgba(#000, .65));
+
+  //@media (max-width: $bar-w + .5*$bar-h) { --wide: 0 }
+
+  //@media (min-width: 400px) { --narr: 0 }
+}
+
+.title{
+  color: #fffcfc;
+  margin-top: 10%;
+}
+
+.artikel {
+  --p: var(--parity, 1);
+  --q: calc(1 - var(--p));
+  --s: calc(1 - 2*var(--p));
+  display: grid;
+  grid-template:
+          calc(var(--j)*#{$lvl-0-f*$lvl-0-s}) #{$lvl-1-f*$lvl-1-s} 1fr/
+		$col-0 1fr $col-1;
+  position: relative;
+  z-index: calc(var(--n) - var(--idx));
+  margin: 50px auto;
+  border: solid calc(var(--i)*#{$art-b}) transparent;
+  max-width: $art-w;
+  min-height: $art-h;
+  border-radius: $art-r0 $art-r1 $art-r1 $art-r0;
+  transform-style: preserve-3d;
+  transform: translate(calc(var(--i)*var(--s)*#{-$art-x}));
+  background:
+          linear-gradient(calc(var(--s)*90deg), #f1eff0, #d2d3d5)
+          padding-box,
+          linear-gradient(calc(var(--s)*90deg),
+                  var(--c0), var(--c1) $ico-w + $art-b, #ededed 0, #dcdcdc)
+          border-box;
+
+  &:before {
+    position: absolute;
+    bottom: -.25*$art-h;
+    left: calc(var(--q)*(100% - #{$art-s}) + var(--s)*#{.2*$art-s});
+    width: $art-s; height: .5*$art-h;
+    border-radius: 50%;
+    transform: translatez(-1px) rotate(calc(var(--s)*5deg));
+    background: rgba(#000, .2);
+    filter: blur(9px);
+    content: ''
+  }
+
+  &:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: calc(1 + var(--j))/ calc(3 + var(--i));
+    grid-column: calc(3 - 2*var(--i)*var(--q))/ span 1;
+    border-radius: inherit;
+    background: var(--wide,
+            radial-gradient(at calc(var(--q)*100%) 50%, rgba(#000, .5), transparent 69%)
+            calc(var(--q)*100%) 50%/ .5rem 125% no-repeat,
+            radial-gradient(at calc(var(--q)*100%) 50%, var(--c0), var(--c1))
+            50%/ 100% 125%);
+    font-size: calc(var(--i)*.375*#{$art-h} + var(--j)*#{$lvl-1-s});
+    content: attr(data-icon)
+  }
+
+}
+
+.link{
+  counter-increment: idx;
+  &:nth-of-type(odd) { --parity: 0 }
+}
+
+.option {
+  display: flex;
+  flex-direction: var(--wide, column);
+  place-content: center;
+  grid-row: 1/ calc(2 + 2*var(--i));
+  grid-column: calc(1 + 2*var(--i)*var(--q))/ span calc(1 + 2*var(--j));
+  position: relative;
+  color: var(--c1);
+  font-size: $lvl-0-s;
+  line-height: calc(var(--i) + var(--j)*#{$lvl-0-f});
+  text-align: center;
+  text-transform: uppercase;
+
+  &:before {
+    padding-right: calc(var(--j)*.5em);
+    font-size: calc(var(--i)*2em + 1em);
+    content: counter(idx, decimal-leading-zero)
+  }
+
+  &:after {
+    position: absolute;
+    bottom: calc(var(--i)*25% + var(--j)*#{-.5*$hno-b});
+    left: calc(var(--i)*(var(--p)*(100% - #{$hno-b}) - var(--s)*#{.5*$hno-b}) + var(--j)*25%);
+    width: calc(var(--j)*50% + var(--i)*#{$hno-b});
+    height: calc(var(--i)*50% + var(--j)*#{$hno-b});
+    border-radius: $hno-b;
+    box-shadow: inset calc(var(--i)*2px) calc(var(--j)*2px) 5px rgba(#000, .35),
+    inset calc(var(--i)*-1px) calc(var(--j)*-1px) 0 3px rgba(#fff, .25),
+    calc(var(--i)*1px) calc(var(--j)*1px) 1px rgba(#fff, .5);
+    background: currentcolor;
+    content: ''
+  }
+}
+
+.judulMenu, .menu-paragraf { padding: .75em calc(var(--i)*1.75rem + var(--j)*2vw) var(--pv, 0) }
+
+.judulMenu {
+  display: flex;
+  align-items: center;
+  justify-content: var(--wide, var(--parity, flex-end));
+  grid-row: 2/ 3;
+  grid-column: calc(1 + var(--i))/ 3;
+  font-size: $lvl-0-s;
+  text-transform: capitalize;
+  text-decoration-line: underline;
+}
+
+.menu-paragraf {
+  --pv: .5em;
+  display: flex;
+  grid-row: 3/4;
+  grid-column: calc(1 + var(--i))/ calc(3 + var(--j))
+}
