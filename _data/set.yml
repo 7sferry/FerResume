@@ -1,6 +1,6 @@
 # judul besar
 icon: 'me.png'
-title: Ferry Suhandri
+title: "Ferry Suhandri"
 mail: '7sferry@gmail.com'
 desc:
 - {warna: green, tagline: ' Software Engineer'}
@@ -9,10 +9,16 @@ desc:
 - {warna: wisteria, tagline: ' Logical Thinker'}
 - {warna: midnight, tagline: ' Problem Solver'}
 
-deskripsiseo: 'Ferry Suhandri Inondesian Java Software Engineer Developer Solok Sumatera Barat Minang Minangkabau Sikumbang'
-author: 'https://facebook.com/7sferry'
-publisher: 'facebook.com/7sferry'
+deskripsi: 'Example of online CV or Resume for Software Engineer, Developer or Web Programmer made by Ferry Suhandri,
+an IT Strategist from Solok, West Sumatera Indonesia'
+author: 'Ferry Suhandri'
+publisher: 'https://facebook.com/7sferry'
 themeColor: "9f3636"
+keyword: "Indonesian Software Engineer, Indonesian Developer, Indonesian Web Programmer, Ferry Suhandri, Online Resume,
+Online CV, Solok, Sikumbang, Sumatera Barat, Indonesian Java Software Engineer, Indonesian Java Developer,
+Example of Netlify site, Indonesian Java Web Programmer, Netlify Site, Minang, Minangkabau, Web Designer, HTML5, CSS3,
+Java, JSP, JSTL, PostgreSQL, Apache Tomcat, Spring, Jobstreet, AngularJS, Jquery, mrferry.co.vu, Javascript, Jatis,
+Indivara, PJI, Pradipta Jatis Indonesia, ISTJ Indonesia, Enneagram Type 5 Indonesia"
 
 
 bio:
@@ -39,17 +45,17 @@ menu:
 - {nama: about}
 - {nama: experiences}
 - {nama: certificates}
-- {nama: nonprojects}
+- {nama: interests}
 - {nama: contact}
 
 # daftar proyek
 interests:
-#- {nama: Java Enterprise - Spring Struts Mybatis, gambar: 'java.jpg', ikon: java.png}
 - {nama: "Web Programming & Designing", gambar: 'cv.jpg', ikon: html5.png}
-- {nama: "Game Modding", gambar: 'mod.jpg', ikon: game.png}
+- {nama: "Adventure Gaming & Modding", gambar: 'mod.jpg', ikon: game.png}
 - {nama: "Digital Painting", gambar: 'painting.jpg', ikon: photoshop.png}
-#- {nama: Versioning Control - Tortoise GIT, gambar: 'git.png', ikon: versioning.png}
-#- {nama: Operating System - Linux Windows, gambar: 'aws-windows-server.png', ikon: cloud.png}
+- {nama: "Football", gambar: 'football.png', ikon: soccer.png}
+- {nama: "Music Mixing", gambar: 'mixing.jpg', ikon: turntable.png}
+- {nama: "Reading Science Articles", gambar: 'reading.jpg', ikon: brain.png}
 
 experiences:
 - {tahun: October 2013, tempat: Politeknik Pos Indonesia, gambar: fotopoltekpos.JPG,
@@ -85,17 +91,17 @@ to develop Alfacart Back Office apps for 4 months. Tech used: <b>Spring, Jsp/Jst
 #dokumen
 dokumen:
 - {img: oracle.jpg, ikon: oracle-ikon.png,
-teks: '<strong>Badan Nasional Sertifikasi Profesi</strong><br><em>Certificate of Competence</em><br>Oracle Database Programming'}
+penerbit: 'Badan Nasional Sertifikasi Profesi', judul: 'Certificate of Competence', teks: 'Oracle Database Programming'}
 - {img: sap.jpg, ikon: sap-ikon.png,
-teks: '<strong>SAP Edugate</strong><br><em>Certificate of Accomplishment</em><br>BC400 - Introduction to the ABAP Workbench'}
+penerbit: 'SAP Edugate', judul: 'Certificate of Accomplishment', teks: 'BC400 - Introduction to the ABAP Workbench'}
 - {img: toefl.jpg, ikon: toefl-ikon.png,
-teks: '<strong>UPT Bahasa</strong><br><em>English Proficiency Test Result</em><br>Score: 457'}
+penerbit: 'UPT Bahasa', judul: 'English Proficiency Test Result', teks: 'Score: 457'}
 # - {img: poltekpos.jpg, ikon: poltekpos-ikon.png,
 # teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Diploma Teknik Informatika</em><br>GPA: 3.47/4.00'}
 - {img: busuu.png, ikon: busuu_logo.png,
-teks: '<strong>Level A2 in English on Busuu</strong><br><em>Certificate of Level Completion</em><br>Score: A- (90%)'}
+penerbit: 'Level A2 in English on Busuu', judul: 'Certificate of Level Completion', teks: 'Score: A- (90%)'}
 - {img: public.jpg, ikon: poltekpos-ikon.png,
-teks: '<strong>Politeknik Pos Indonesia</strong><br><em>Public Speaking</em><br>'}
+penerbit: 'Politeknik Pos Indonesia', judul: 'Public Speaking', teks: "College's Seminar"}
 
 #socmed
 media:
@@ -107,10 +113,13 @@ media:
                                                    text: "+62 853 5545 2155",
                                                    imageUrl: "../assets/img/sosmed/whatsapp.png"
                                                  });'}
-- {link: 'http://www.mrferry.co.vu/?m=0', nama: blogger.png}
+- {link: 'https://www.mrferry.co.vu/?m=0', nama: blogger.png}
 
+#for index.html
 index:
 - {judul: "Resume", link: "resume", ikon: "👷‍♂️", warna1: "ffd817", warna2: "f6a21d",
 konten: "It contains my professional information includes skills, experiences and certificates."}
 - {judul: "Facebook", link: "https://facebook.com/ferry95", ikon: "👦", warna1: "ab6ee5", warna2: "9937ee",
 konten: "My personal social media. I actively using facebook in my free time."}
+- {judul: "Blog", link: "https://www.mrferry.co.vu/?m=0", ikon: "💻", warna1: "ff61b0", warna2: "fe2c7c",
+konten: "My personal blog. I used to share my point of view about things sometime."}

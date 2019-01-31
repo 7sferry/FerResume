@@ -56,7 +56,7 @@
     //  background: gray
 
     @for $a from 1 through 10
-      &.val#{$a} span:nth-child(n+#{$a+1})
+      &.val#{$a} span:nth-child(n+#{$a+1}) //semua span dikasih warna merah, kalau parent .val8 span 1-8 tetap merah, tapi span 9 dan sisanya jadi gray, dst.
         @extend %skill
 
 @media screen and (max-width: 630px)
