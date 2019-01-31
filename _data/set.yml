@@ -101,7 +101,7 @@ penerbit: 'UPT Bahasa', judul: 'English Proficiency Test Result', teks: 'Score: 
 - {img: busuu.png, ikon: busuu_logo.png,
 penerbit: 'Level A2 in English on Busuu', judul: 'Certificate of Level Completion', teks: 'Score: A- (90%)'}
 - {img: public.jpg, ikon: poltekpos-ikon.png,
-penerbit: 'Politeknik Pos Indonesia', judul: 'Public Speaking', teks: "College's Seminar"}
+penerbit: 'Politeknik Pos Indonesia', judul: 'Public Speaking', teks: "College Seminar"}
 
 #socmed
 media:

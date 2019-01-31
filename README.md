@@ -5,4 +5,10 @@ This is made with Jekyll, Ruby, JavaScript, Jquery, Sass, HTML5, aos, pace, swip
 
 
 Thanks to:
-Travis Neilson, freefrontend.com, Ana Tudor and anyone who inspired me to build this project.
+- Travis Neilson
+<br>
+- freefrontend.com
+ <br>
+- Ana Tudor
+<br>
+- Anyone who inspired me to build this project.
