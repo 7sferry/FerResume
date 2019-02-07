@@ -11,4 +11,6 @@ Thanks to:
  
 - Ana Tudor
 
+- Julie Park.
+
 - Anyone who inspired me to build this project.
