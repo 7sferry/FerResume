@@ -8,10 +8,10 @@ desc:
 - {warna: pomegranate, tagline: ' Hardwork Achiever'}
 - {warna: wisteria, tagline: ' Logical Thinker'}
 - {warna: midnight, tagline: ' Problem Solver'}
-thumbnail: "../../assets/img/smileglasses1.png"
+thumbnail: "smileglasses1.png"
 url: "https://ferry.netlify.com/resume/"
 
-deskripsi: 'Ferry Suhandri. Example of online CV or Resume for Software Engineer, Developer or Web Programmer made by
+deskripsi: 'Example of online CV or Resume for Software Engineer, Developer or Web Programmer made by Ferry Suhandri,
 an IT Strategist from Solok, West Sumatera Indonesia'
 author: 'Ferry Suhandri'
 publisher: 'https://facebook.com/7sferry'

@@ -42,7 +42,7 @@
     <meta name='apple-touch-fullscreen' content='yes'>
     <meta name='apple-mobile-web-app-status-bar-style' content='black'>
     <meta name="google-site-verification" content="6RziIE_ZhYMRcSOJtYpoYAYsnqTn0nUbLZS3nXgC2Hw" />
-    <meta property="og:image" content="{{site.data.set.thumbnail}}">
+    <!--<meta property="og:image" content="{{site.data.set.thumbnail}}">-->
     <meta name="twitter:site" content="@netlify">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{site.data.set.url}}">
@@ -78,12 +78,17 @@
     <script src="../assets/js/pace.min.js"></script>
     <script src="../assets/js/aos.js"></script>
     <script src="../assets/js/jquery-3.1.1.min.js"></script>
+<script>
+    $(function(){
+		$("head").append("<meta property='og:image' content='"+window.location.origin+"/assets/img/{{site.data.set.thumbnail}}'> ");
+	})
+</script>
     <script src="../assets/js/resume.js"></script>
     <script src="../assets/js/sweetalert.min.js"></script>
     <script src='../assets/js/swiper.min.js'></script>
 
     <!--below for local only otherwise comment it-->
-    <!--<script type="text/javascript" src="http://livejs.com/live.js"></script>-->
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
     <!--above for local only otherwise comment it-->
 </body>
 
