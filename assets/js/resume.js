@@ -27,6 +27,7 @@ $(function() {
     }
     setInterval(changeWord, 3000);
     swiping();
+    if(!!window.styleMedia) $("header").css("background-attachment","unset");
 });
 
 function initBubbles() {
