@@ -33,7 +33,7 @@ bio:
 
 #skill
 skill:
-- {nama: Programming, nilai: 8}
+- {nama: Programming, nilai: 9}
 - {nama: Learning, nilai: 10}
 - {nama: Web Design, nilai: 7}
 - {nama: Planning, nilai: 7}
@@ -79,7 +79,7 @@ ket: "Contributed to Dinamika Mitra Sukses Makmur's client to develop Rest API f
 and fix bugs on Etalaze -<i>administrator web page</i>- for 3 months and 2 months extension. Tech used: <b>Spring, Struts, Mybatis,
 Hibernate, Javascript, Jsp/Jstl, Amazon Web Service as Server, Tomcat as Application Server and PostgreSQL as Database</b>."}
 - {tahun: June 2018, tempat: Novo Dashboard, gambar: novo.jpg,
-ket: "Developed a sales dashboard apps for Novo Nordisk Indonesia -<i>a global healthcare company</i>- for 3 months. Tech used: <b>Spring, Mybatis,
+ket: "Developed a sales dashboard apps for Novo Nordisk Indonesia -<i>a global health-care company</i>- for 3 months. Tech used: <b>Spring, Mybatis,
 Angular JS, Windows Server 2012 as Server, Tomcat as Application Server and SQL Server 2008 R2 as Database</b>."}
 - {tahun: September 2018, tempat: Ultra Voucher, gambar: uv.png,
 ket: "Helped one of Indivara Group's client, Trimegah Karya Pratama -<i>a fintech company which distributed vouchers for merchants</i>- to
@@ -120,8 +120,8 @@ media:
 #for index.html
 index:
 - {judul: "Resume", link: "resume", ikon: "👷‍♂️", warna1: "ffd817", warna2: "f6a21d",
-konten: "It contains my professional information includes skills, experiences and certificates."}
+konten: "It contains my professional information included skills, experiences and certificates."}
 - {judul: "Facebook", link: "https://facebook.com/ferry95", ikon: "👦", warna1: "ab6ee5", warna2: "9937ee",
-konten: "My personal social media. I actively using facebook in my free time."}
+konten: "My personal social media. I am actively using facebook in my free time."}
 - {judul: "Blog", link: "https://www.mrferry.co.vu/?m=0", ikon: "💻", warna1: "ff61b0", warna2: "fe2c7c",
 konten: "My personal blog. I used to share my point of view about things sometime."}
