@@ -123,12 +123,12 @@ experiences:
   ket: "Had internship before graduates from Polytechnic Pos Indonesia at Nusantara Turbin & Propulsi -<i>a company
   that focused on aero engine maintenance</i>- to designed and build a website to monitor server's temperature
   with chart for a month. Tech used: <b>PHP 5.0 and Javascript with MySQL as Database and Apache as Web Server</b>."
-#-
-#  tahun: October 2013
-#  tugas: Politeknik Pos Indonesia
-#  gambar: fotopoltekpos.JPG
-#  ket: "Began interested in technology since on high school and took Informatics Engineering at Politeknik Pos
-#  Indonesia -<i>one of polytechnic which located in Bandung</i>- and graduated on October 2016 with GPA 3.47."
+-
+  tahun: October 2013
+  tugas: Politeknik Pos Indonesia
+  gambar: fotopoltekpos.JPG
+  ket: "Began interested in technology since on high school and took Informatics Engineering at Politeknik Pos
+  Indonesia -<i>one of polytechnic which located in Bandung</i>- and graduated with GPA 3.47."
 
 #sertifikat
 documents:
