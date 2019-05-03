@@ -1,17 +1,17 @@
 <section class="about">
-<h3 data-aos="fade-down" data-aos-easing="ease-in" id="{{site.data.set.menu[0].nama}}">{{site.data.set.menu[0].nama}}</h3>
+<h3 data-aos="fade-down" data-aos-easing="ease-in" id="{{site.data.set.menu[0]}}">{{site.data.set.menu[0]}}</h3>
 
 <div data-aos="slide-up" data-aos-easing="ease-out" class="foto"></div>
 
 <div data-aos="zoom-in-up" data-aos-easing="ease-in-out-sine" class="bio">
-    {% for a in site.data.set.bio %}
-    <p class="isi-bio">{{ a.isi }}</p>
+    {% for a in site.data.set.personality %}
+    <p class="isi-bio">{{ a }}</p>
     {% endfor %}
 </div>
 
 <div class="skill">
 
-    {% for a in site.data.set.skill %}
+    {% for a in site.data.set.skills %}
     <div class="daftar-skill">
         <div data-aos="zoom-in-down" data-aos-easing="ease-out" class="nama-skill">{{ a.nama }}</div>
         <div class="ikon-skill val{{ a.nilai }}">

@@ -4,7 +4,7 @@
         <div class="burger" onclick="togglemenu();"></div>
         <nav id="navigasi">
             {% for nav in site.data.set.menu %}
-            <a href="#{{ nav.nama }}">{{ nav.nama }}</a>
+            <a href="#{{ nav }}">{{ nav }}</a>
             {% endfor %}
         </nav>
     </div>
@@ -13,8 +13,8 @@
     </h1>
         <p data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000" class="deskrip">
             I am a
-            {% for tag in site.data.set.desc %}
-            <span class="word {{ tag.warna }}">{{ tag.tagline }}</span>
+            {% for tag in site.data.set.banner %}
+            <span class="word {{ tag.warna }}">{{ tag.slogan }}</span>
             {% endfor %}
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </p>
