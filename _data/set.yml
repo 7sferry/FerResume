@@ -34,6 +34,8 @@ Indivara, PJI, Pradipta Jatis Indonesia, ISTJ, Enneagram Type 5"
 personality:
 - "<strong>A Software Engineer</strong> who likes problem solving, thirsts for knowledge & challenges, loves learning
   and able to work in team or individually"
+- "<strong>Have trained</strong> from an inclusive training by experts to learn Java and its frameworks and have
+experienced from some projects with multiple technologies & tight schedules"
 - "<strong>Strongly qualified individual</strong> with experience working in Information & Technology Industry as
   Software Developer and skilled at Web Programming"
 
@@ -86,7 +88,7 @@ experiences:
   tahun: September 2018
   tugas: Ultra Voucher
   gambar: uv.png
-  ket: "Helped one of Indivara Group's client, Trimegah Karya Pratama -<i>a fintech company which distributed
+  ket: "Helped one of Indivara Group's client, Trimegah Karya Pratama -<i>an e-commerce which distributed
   vouchers for merchants</i>- to develop a few features on Rest API for 2 months. Tech used: <b>Spring, Mybatis,
   Tomcat as Application Server and PostgreSQL as Database</b>."
 -
@@ -171,7 +173,7 @@ media:
 - {link: 'https://www.linkedin.com/in/ferry-suhandri-094859130/', nama: in.png}
 - {link: '#contact', nama: whatsapp.png, alert: 'swal({
                                                    title: "Let&apos;s Talk!",
-                                                   text: "+62 853 5545 2155",
+                                                   text: "+62 822 1634 3636",
                                                    imageUrl: "../assets/img/sosmed/whatsapp.png"
                                                  });'}
 - {link: 'https://www.mrferry.co.vu/?m=0', nama: blogger.png}
