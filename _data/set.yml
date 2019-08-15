@@ -171,13 +171,13 @@ media:
 - {link: 'https://www.facebook.com/7sferry', nama: facebook.png}
 - {link: 'https://github.com/7sferry', nama: github.png}
 - {link: 'https://www.linkedin.com/in/ferry-suhandri-094859130/', nama: in.png}
-- {link: '#contact', nama: whatsapp.png, alert: 'swal({
-                                                   title: "Let&apos;s Talk!",
-                                                   text: "+62 822 1634 3636",
-                                                   imageUrl: "../assets/img/sosmed/whatsapp.png"
-                                                 });'}
 - {link: 'https://www.mrferry.co.vu/?m=0', nama: blogger.png}
-- {link: 'https://www.slideshare.net/slideshow/embed_code/key/prjRWnUbea66WH', nama: cv.png}
+#- {link: '#contact', nama: whatsapp.png, alert: 'swal({
+#                                                   title: "Let&apos;s Talk!",
+#                                                   text: "+62 822 1634 3636",
+#                                                   imageUrl: "../assets/img/sosmed/whatsapp.png"
+#                                                 });'}
+#- {link: 'https://www.slideshare.net/slideshow/embed_code/key/prjRWnUbea66WH', nama: cv.png}
 
 #halaman awal
 index:
