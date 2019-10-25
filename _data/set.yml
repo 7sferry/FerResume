@@ -28,13 +28,13 @@ theme: "9f3636"
 keyword: "Ferry Suhandri, Indonesian Software Engineer, Indonesian Developer, Indonesian Web Programmer, Online Resume,
 Online CV, Solok, Sikumbang, Sumatera Barat, Indonesian Java Software Engineer, Indonesian Java Developer,
 Example of Netlify site, Indonesian Java Web Programmer, Netlify Site, Minang, Minangkabau, Web Designer, HTML5, CSS3,
-Java, JSP, JSTL, PostgreSQL, Apache Tomcat, Spring, Jobstreet, AngularJS, Jquery, mrferry.co.vu, Javascript, Jatis,
-Indivara, PJI, Pradipta Jatis Indonesia, ISTJ, Enneagram Type 5"
+Java, JSP, JSTL, PostgreSQL, Apache Tomcat, Spring, Spring boot, Jobstreet, Techinasia, AngularJS, Jquery, mrferry.co
+.vu, Javascript, Jatis, Indivara, PJI, Pradipta Jatis Indonesia, Advotics, ISTJ, Enneagram Type 5"
 
 personality:
 - "<strong>A Software Engineer</strong> who likes problem solving, thirsts for knowledge & challenges, loves learning
   and able to work in team or individually"
-- "<strong>Have trained</strong> from an inclusive training by experts to learn Java and its frameworks and have
+- "<strong>Have trained well</strong> from an inclusive training by experts to learn Java and its frameworks and have
 experienced from some projects with multiple technologies & tight schedules"
 - "<strong>Strongly qualified individual</strong> with experience working in Information & Technology Industry as
   Software Developer and skilled at Web Programming"
@@ -70,12 +70,19 @@ interests:
 #daftar pengalaman
 experiences:
 -
+  tahun: September 2019
+  tugas: Advotics Teknologi Global
+  gambar: advo.png
+  ket: "Continued my journey to Advotics Teknologi Global -<i>an advocacy analytics startup on supply chain
+  businesses</i>- to develop back end technology. Tech used: <b>Spring boot, Hibernate, Mockito, Mysql as Database,
+  and CentOS as Application Server</b>."
+-
   tahun: May 2019
   tugas: Permodalan Nasional Madani
   gambar: pnm.jpg
-  ket: "Assigned to Permodalan Nasional Madani (PNM) -<i>an Indonesian state owned enterprises (BUMN) that
-  focused on financing small and medium enterprises</i>- to develop back end technology as web services for
-  Investment Management System for 4 months. Tech used: <b>Groovy, Grails, Spring, Hibernate, AngularJS, PostgreSQL as
+  ket: "Assigned to Permodalan Nasional Madani (PNM) -<i>an Indonesian state owned enterprises (BUMN) which
+  focuses on financing small and medium enterprises</i>- to develop back end technology as web services for
+  Investment Management System for 3 months. Tech used: <b>Groovy, Grails, Spring, Hibernate, AngularJS, PostgreSQL as
   Database, Red Hat as Server and Tomcat as Application Server</b>."
 -
   tahun: December 2018
