@@ -1,9 +1,33 @@
 <section class="section6">
     <h3 id="{{site.data.set.menu[4]}}">{{site.data.set.menu[4]}}</h3>
     <div data-aos="zoom-in" data-aos-easing="ease-in-out-sine" class="sosmed">
+        {% assign i = 0 %}
         {% for a in site.data.set.media %}
-        <a onclick='{{a.alert}}' href="{{a.link}}"><img class="ikon-sosmed" src="../assets/img/sosmed/{{a.nama}}"></a>
+        <a onclick=forAlert("{{i}}");
+           href="#contact"><img class="ikon-sosmed" src="../assets/img/sosmed/{{a.ikon}}.png"></a>
+        {% assign i = i | plus:1 %}
         {% endfor %}
     </div>
     <a data-aos="fade-right" data-aos-easing="ease-in-out-quad" class="email" href="mailto:{{site.data.set.mail}}">{{site.data.set.mail}}</a>
 </section>
+<script>
+    const media = JSON.parse(`{{site.data.set.media|jsonify}}`);
+
+    function forAlert(idx){
+        const obj = media[idx];
+
+        swal({
+            title: obj.title,
+            text: obj.text === undefined ? `You're gonna be redirect to:\n ${obj.link}\n` : obj.text,
+            buttons: {
+                cancel: "No, Thanks",
+                continue: true,
+            },
+            icon: `{{site.data.set.imgPath}}/sosmed/${obj.ikon}.png`
+        }).then((value) => {
+            if(value === "continue"){
+                window.location.replace(obj.link);
+            }
+        });
+    }
+</script>

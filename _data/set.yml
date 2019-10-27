@@ -27,6 +27,8 @@ publisher: 'https://facebook.com/7sferry'
 
 theme: "9f3636"
 
+imgPath: "../assets/img"
+
 keyword: "Ferry Suhandri, Indonesian Software Engineer, Indonesian Developer, Indonesian Web Programmer, Online Resume,
 Online CV, Solok, Sikumbang, Sumatera Barat, Indonesian Java Software Engineer, Indonesian Java Developer,
 Example of Netlify site, Indonesian Java Web Programmer, Netlify Site, Minang, Minangkabau, Web Designer, HTML5, CSS3,
@@ -177,15 +179,12 @@ documents:
 
 #sosmed
 media:
-- {link: 'https://www.facebook.com/7sferry', nama: facebook.png}
-- {link: 'https://github.com/7sferry', nama: github.png}
-- {link: 'https://www.linkedin.com/in/ferry-suhandri-094859130/', nama: in.png}
-- {link: 'https://www.mrferry.co.vu/?m=0', nama: blogger.png}
-#- {link: '#contact', nama: whatsapp.png, alert: 'swal({
-#                                                   title: "Let&apos;s Talk!",
-#                                                   text: "+62 822 1634 3636",
-#                                                   imageUrl: "../assets/img/sosmed/whatsapp.png"
-#                                                 });'}
+- {link: 'https://www.crystalknows.com/p/ferry', ikon: crystal-ball, title: "CrystalKnows"}
+- {link: 'https://www.facebook.com/7sferry', ikon: facebook, title: "Facebook"}
+- {link: 'https://github.com/7sferry', ikon: github, title: "Github"}
+- {link: 'https://www.linkedin.com/in/ferry-suhandri-094859130/', ikon: in, title: "LinkedIn"}
+- {link: 'https://www.mrferry.co.vu/?m=0', ikon: blogger, title: "Blog"}
+- {link: '#contact', ikon: whatsapp, title: "Let's Talk!", text: "+62 853 5545 2155"}
 #- {link: 'https://www.slideshare.net/slideshow/embed_code/key/prjRWnUbea66WH', nama: cv.png}
 
 #halaman awal
