@@ -28,6 +28,7 @@
         }).then((value) => {
             switch(value){
                 case "Continue":
+                    if(obj.link)
                     window.location.assign(obj.link);
                     break;
             }
