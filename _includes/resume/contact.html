@@ -2,31 +2,34 @@
     <h3 id="{{site.data.set.menu[4]}}">{{site.data.set.menu[4]}}</h3>
     <div data-aos="zoom-in" data-aos-easing="ease-in-out-sine" class="sosmed">
         {% assign i = 0 %}
-        {% for a in site.data.set.media %}
-        <a onclick=forAlert("{{i}}");
-           href="#contact"><img class="ikon-sosmed" src="../assets/img/sosmed/{{a.ikon}}.png"></a>
+        {% for a in site.data.set.social %}
+        <a onclick=showAlert("{{i}}");
+           ><img class="ikon-sosmed" src="../assets/img/sosmed/{{a.ikon}}.png"></a>
         {% assign i = i | plus:1 %}
         {% endfor %}
     </div>
     <a data-aos="fade-right" data-aos-easing="ease-in-out-quad" class="email" href="mailto:{{site.data.set.mail}}">{{site.data.set.mail}}</a>
 </section>
-<script>
-    const media = JSON.parse(`{{site.data.set.media|jsonify}}`);
 
-    function forAlert(idx){
-        const obj = media[idx];
+<script>
+    const social = JSON.parse(`{{site.data.set.social|jsonify}}`);
+
+    function showAlert(idx){
+        const obj = social[idx];
 
         swal({
             title: obj.title,
-            text: obj.text === undefined ? `You're gonna be redirect to:\n ${obj.link}\n` : obj.text,
+            text: obj.text === undefined ? `You're gonna be redirected to:\n ${obj.link}\n` : obj.text,
             buttons: {
                 cancel: "No, Thanks",
-                continue: true,
+                Continue: true,
             },
             icon: `{{site.data.set.imgPath}}/sosmed/${obj.ikon}.png`
         }).then((value) => {
-            if(value === "continue"){
-                window.location.replace(obj.link);
+            switch(value){
+                case "Continue":
+                    window.location.assign(obj.link);
+                    break;
             }
         });
     }

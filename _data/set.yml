@@ -69,7 +69,7 @@ interests:
 - {nama: "Digital Painting", gambar: 'painting.jpg', ikon: photoshop.png}
 - {nama: "Football", gambar: 'football.jpg', ikon: soccer.png}
 - {nama: "Music Mixing", gambar: 'mixing.jpg', ikon: turntable.png}
-- {nama: "Reading Science Articles", gambar: 'reading.jpg', ikon: brain.png}
+- {nama: "Reading Tech Articles", gambar: 'reading.jpg', ikon: brain.png}
 
 #daftar pengalaman
 experiences:
@@ -77,14 +77,14 @@ experiences:
   tahun: September 2019
   tugas: Advotics Teknologi Global
   gambar: advo.png
-  ket: "Continued my journey to Advotics Teknologi Global -<i>an advocacy analytics startup on supply chain
-  businesses</i>- to develop back end technology. Tech used: <b>Spring boot, Hibernate, Mockito, Mysql as Database,
-  and CentOS as Application Server</b>."
+  ket: "Joined Advotics Teknologi Global -<i>an advocacy analytics startup which focuses on supply chain businesses</i>-
+  as Software Development Engineer to develop clean architecture microservices back end technology as web services.
+  Tech used: <b>Spring boot, Hibernate, Mockito, Mysql as Database, and CentOS as Application Server</b>."
 -
   tahun: May 2019
   tugas: Permodalan Nasional Madani
   gambar: pnm.jpg
-  ket: "Assigned to Permodalan Nasional Madani (PNM) -<i>an Indonesian state owned enterprises (BUMN) which
+  ket: "Assisted Permodalan Nasional Madani (PNM) -<i>an Indonesian state owned enterprises (BUMN) which
   focuses on financing small and medium enterprises</i>- to develop back end technology as web services for
   Investment Management System for 3 months. Tech used: <b>Groovy, Grails, Spring, Hibernate, AngularJS, PostgreSQL as
   Database, Red Hat as Server and Tomcat as Application Server</b>."
@@ -114,15 +114,15 @@ experiences:
   tugas: Betterway
   gambar: bw.jpg
   ket: "Contributed to Dinamika Mitra Sukses Makmur's client to develop microservices Rest API for Betterway apps
-  -<i>an ecommerce mobile apps based on Philippines</i>- and fix bugs on their back office website for 3 months and 2
-  months extension. Tech used: <b>Spring Boot,  Struts, Mybatis, Hibernate, Javascript, Jsp/Jstl, Amazon Web
-  Service as Server, Tomcat as Application Server and PostgreSQL as  Database</b>."
+  -<i>an ecommerce mobile apps based on Philippines</i>- and fix bugs on their back office website for 5 months. Tech
+   used: <b>Spring Boot,  Struts, Mybatis, Hibernate, Javascript, Jsp/Jstl, Amazon Web Service as Server, Tomcat as
+   Application Server and PostgreSQL as  Database</b>."
 -
   tahun: December 2017
   tugas: Pradipta Jatis Indonesia
   gambar: pji.jpg
-  ket: "Joined Pradipta Jatis Indonesia -<i>one of subsidiary of Jatis Group</i>- as Associate Business Technologist
-  and have been actively contributed on some projects."
+  ket: "Assigned to Pradipta Jatis Indonesia -<i>one of subsidiary of Jatis Group</i>- as Associate Business
+  Technologist and have been actively contributed on some projects."
 -
   tahun: August 2017
   tugas: Indivara Group
@@ -134,7 +134,7 @@ experiences:
   tahun: February 2016
   tugas: Nusantara Turbin & Propulsi
   gambar: ntp.jpg
-  ket: "Had internship before graduates from Polytechnic Pos Indonesia at Nusantara Turbin & Propulsi -<i>a company
+  ket: "Had internship before graduated from Polytechnic Pos Indonesia at Nusantara Turbin & Propulsi -<i>a company
   that focused on aero engine maintenance</i>- to design and build a website to monitor server's temperature
   with chart for a month. Tech used: <b>PHP 5.0 and Javascript with MySQL as Database and Apache as Web Server</b>."
 -
@@ -178,13 +178,33 @@ documents:
   teks: "College Seminar"
 
 #sosmed
-media:
-- {link: 'https://www.crystalknows.com/p/ferry', ikon: crystal-ball, title: "CrystalKnows"}
-- {link: 'https://www.facebook.com/7sferry', ikon: facebook, title: "Facebook"}
-- {link: 'https://github.com/7sferry', ikon: github, title: "Github"}
-- {link: 'https://www.linkedin.com/in/ferry-suhandri-094859130/', ikon: in, title: "LinkedIn"}
-- {link: 'https://www.mrferry.co.vu/?m=0', ikon: blogger, title: "Blog"}
-- {link: '#contact', ikon: whatsapp, title: "Let's Talk!", text: "+62 853 5545 2155"}
+social:
+-
+  link: 'https://www.crystalknows.com/p/ferry'
+  ikon: crystal-ball
+  title: "CrystalKnows"
+-
+  link: 'https://www.facebook.com/7sferry'
+  ikon: facebook
+  title: "Facebook"
+-
+  link: 'https://github.com/7sferry'
+  ikon: github
+  title: "Github"
+-
+  link: 'https://www.linkedin.com/in/7sferry/'
+  ikon: in
+  title: "LinkedIn"
+-
+  link: 'https://www.mrferry.co.vu/?m=0'
+  ikon: blogger
+  title: "Blog"
+-
+  link: '#contact'
+  ikon: whatsapp
+  title: "Let's Talk!"
+  text: "+62 853 5545 2155"
+
 #- {link: 'https://www.slideshare.net/slideshow/embed_code/key/prjRWnUbea66WH', nama: cv.png}
 
 #halaman awal
@@ -198,7 +218,7 @@ index:
   konten: "It contains my professional information included skills, experiences and certificates."
 -
   judul: "Facebook"
-  link: "https://facebook.com/ferry95"
+  link: "https://facebook.com/7sferry"
   ikon: "👦"
   warna1: "ab6ee5"
   warna2: "9937ee"
