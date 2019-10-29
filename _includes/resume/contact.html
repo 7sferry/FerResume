@@ -4,7 +4,7 @@
         {% assign i = 0 %}
         {% for a in site.data.set.social %}
         <a onclick=showAlert("{{i}}");
-           ><img class="ikon-sosmed" src="../assets/img/sosmed/{{a.ikon}}.png"></a>
+           ><img class="ikon-sosmed" src="{{site.data.set.imgPath}}/sosmed/{{a.ikon}}.png"></a>
         {% assign i = i | plus:1 %}
         {% endfor %}
     </div>
