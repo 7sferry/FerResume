@@ -19,7 +19,7 @@
 
         swal({
             title: obj.title,
-            text: obj.text === undefined ? `You're gonna be redirected to:\n ${obj.link}\n` : obj.text,
+            text: obj.text ? obj.text : `You're gonna be redirected to:\n ${obj.link}\n`,
             buttons: {
                 cancel: "No, Thanks",
                 Continue: true,
