@@ -94,7 +94,7 @@ function animate(elem, style, unit, from, to, time, prop) {
             if (step === 1) {
                 clearInterval(timer);
             }
-        }, 1);
+        }, 0);
     if (prop) {
         elem[style] = from+unit;
     } else {

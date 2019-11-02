@@ -1,7 +1,8 @@
 # Ferresume
 Web Responsive which contains my professional information
 
-This is made with Jekyll, Ruby, JavaScript, Jquery, Sass, HTML5, aos, pace, swiper, sweetalert, and photoshop.
+This is made with Jekyll, Ruby, JavaScript,<del> Jquery,</del> Sass, HTML5, aos, pace, swiper, sweetalert, and 
+photoshop.
 
 
 Thanks to:
