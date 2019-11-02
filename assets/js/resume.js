@@ -2,20 +2,28 @@
  * Created by SIKUMBANG on 28/03/2017.
  */
 
-const words = $('.word');
+function __(el){
+    return document.querySelectorAll(el);
+}
+
+function _(el){
+    return document.querySelector(el);
+}
+
+const words = __('.word');
 let wordArray = [];
 let currentWord = 0;
 words[currentWord].style.opacity = 1;
 
 const bubbleLifeTime = 3;
 const noOfBubbles = 15;
-const wrapper = document.querySelector('h1');
+const wrapper = _('h1');
 
-$(function() {
+document.addEventListener('DOMContentLoaded', function() {
     smoothScroll(2000);
     sertifikat(7000);
-    $("header h1").fitText(1, {minFontSize: '10px', maxFontSize: '72px'});
-    $(".email").fitText(1.5);
+    window.fitText(__("h1"), 1);
+    window.fitText(__(".email"), 1.5);
     autobio(7000);
     bio();
     AOS.init({
@@ -27,7 +35,7 @@ $(function() {
     }
     setInterval(changeWord, 3000);
     swiping();
-    if(!!window.styleMedia) $("header").css("background-attachment","unset");
+    if(!!window.styleMedia) _("header").style.backgroundAttachment = "unset";
 });
 
 function initBubbles() {
@@ -62,106 +70,119 @@ function createCircle() {
 }
 
 function smoothScroll(duration) {
-    $('a[href^="#"]').on('click', function(event) {
-
-        let target = $($(this).attr('href'));
-
-        if(target.length) {
+    __('a[href^="#"]').forEach(button => button.onclick = function(event) {
+        let target = _(this.getAttribute('href'));
+        if(target) {
             event.preventDefault();
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, duration);
+            animate(document.scrollingElement || document.documentElement, "scrollTop", "", window.scrollY,
+                target.offsetTop, duration, true);
         }
     });
 }
+function animate(elem, style, unit, from, to, time, prop) {
+    if (!elem) {
+        return;
+    }
+    const start = new Date().getTime(),
+        timer = setInterval(function () {
+            const step = Math.min(1, (new Date().getTime() - start) / time);
+            if (prop) {
+                elem[style] = (from + step * (to - from))+unit;
+            } else {
+                elem.style[style] = (from + step * (to - from))+unit;
+            }
+            if (step === 1) {
+                clearInterval(timer);
+            }
+        }, 1);
+    if (prop) {
+        elem[style] = from+unit;
+    } else {
+        elem.style[style] = from+unit;
+    }
+}
 
 function sertifikat(durasi) {
-    $('.isi-layar').first().addClass('logo-aktif');
-    $('.ikon-doc').first().addClass('logo-aktif');
-    $('.tombol').first().addClass('logo-aktif');
+    setActiveClass(__('.isi-layar')[0]);
+    setActiveClass(__('.ikon-doc')[0]);
+    setActiveClass(__('.tombol')[0]);
 
     let autosertifikat = runsertifikat(durasi);
-    $('.ikon-doc, .tombol').click(function() {
+    __('.ikon-doc, .tombol').forEach(el => el.onclick = function() {
         autosertifikat.stop();
         autosertifikat.start();
-        let $saudara = $(this).parent().children();
-        let $posisi = $saudara.index($(this));
+        let pos = getIndexElement(el);
 
-        $('.isi-layar').removeClass('logo-aktif').eq($posisi).addClass('logo-aktif');
-        $('.tombol').removeClass('logo-aktif').eq($posisi).addClass('logo-aktif');
-        $('.ikon-doc').removeClass('logo-aktif').eq($posisi).addClass('logo-aktif');
+        changeActiveClass('.isi-layar', pos);
+        changeActiveClass('.tombol', pos);
+        changeActiveClass('.ikon-doc', pos);
     });
+}
+
+function getIndexElement(child){
+    let i = 0;
+    while( (child = child.previousElementSibling) != null ) i++;
+    return i;
+}
+
+function setActiveClass(element){
+    setActiveElement(element, "logo-aktif");
+}
+
+function setActiveElement(element, name){
+    let arr;
+    arr = element.className.split(" ");
+    if (arr.indexOf(name) === -1) {
+        element.className += " " + name;
+    }
+}
+
+function changeActiveClass(el, pos) {
+    changeActiveElement(el, pos, "logo-aktif")
+}
+
+function changeActiveElement(el, pos, name) {
+    let elements = __(el);
+    elements.forEach(element => element.className = element.className.replace(new RegExp("\\b"+name+"\\b","g"), ""));
+    setActiveElement(elements[pos], name);
 }
 
 function runsertifikat(durasi) {
     return new Timer(function() {
-        let logoygaktif = $('.layar').find('.logo-aktif'),
-            posisi = $('.layar').children().index(logoygaktif),
-            jumlahlogo = $('.isi-layar').length;
-        if(posisi == jumlahlogo - 1) {
-            $('.isi-layar').removeClass('logo-aktif').first().addClass('logo-aktif');
-            $('.ikon-doc').removeClass('logo-aktif').first().addClass('logo-aktif');
-            $('.tombol').removeClass('logo-aktif').first().addClass('logo-aktif');
+        let logoygaktif = __('.layar')[0].querySelector('.logo-aktif'),
+            posisi = getIndexElement(logoygaktif),
+            jumlahlogo = __('.isi-layar').length;
+        if(posisi === jumlahlogo - 1) {
+            changeActiveClass('.isi-layar', 0);
+            changeActiveClass('.ikon-doc', 0);
+            changeActiveClass('.tombol', 0);
         } else {
-            $('.logo-aktif').removeClass('logo-aktif').next().addClass('logo-aktif');
-
+            changeActiveClass('.isi-layar', posisi + 1);
+            changeActiveClass('.ikon-doc', posisi + 1);
+            changeActiveClass('.tombol', posisi + 1);
         }
     }, durasi);
 }
 
 function bio() {
-    $('.isi-bio').first().addClass('bio-aktif');
+    setActiveElement(__('.isi-bio')[0], 'bio-aktif');
 }
 
 function autobio(durasi) {
     setInterval(function() {
-        let logoygaktif = $('.bio').find('.bio-aktif'),
-            posisi = $('.bio').children().index(logoygaktif),
-            jumlahlogo = $('.isi-bio').length;
-        if(posisi == jumlahlogo - 1) {
-            $('.isi-bio').removeClass('bio-aktif').first().addClass('bio-aktif');
+        let logoygaktif = __('.bio')[0].querySelector('.bio-aktif'),
+            posisi = getIndexElement(logoygaktif),
+            jumlahlogo = __('.isi-bio').length;
+        if(posisi === jumlahlogo - 1) {
+            changeActiveElement('.isi-bio', 0, 'bio-aktif');
         } else {
-            $('.bio-aktif').removeClass('bio-aktif').next().addClass('bio-aktif');
-
+            changeActiveElement('.isi-bio', posisi + 1, 'bio-aktif');
         }
     }, durasi);
 }
 
-(function($) {
-
-    $.fn.fitText = function(kompressor, options) {
-
-        // Setup options
-        let compressor = kompressor || 1,
-            settings = $.extend({
-                'minFontSize': Number.NEGATIVE_INFINITY,
-                'maxFontSize': Number.POSITIVE_INFINITY
-            }, options);
-
-        return this.each(function() {
-
-            // Store the object
-            let $this = $(this);
-
-            // Resizer() resizes items based on the object width divided by the compressor * 10
-            let resizer = function() {
-                $this.css('font-size', Math.max(Math.min($this.width() / (compressor * 10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
-            };
-
-            // Call once to set.
-            resizer();
-
-            // Call on resize. Opera debounces their resize by default.
-            $(window).on('resize.fittext orientationchange.fittext', resizer);
-
-        });
-
-    };
-
-})(jQuery);
-
 function togglemenu() {
-    let menu = document.getElementById('navigasi');
+    let menu = _('#navigasi');
     menu.classList.toggle('menu-hp');
 }
 
@@ -194,7 +215,7 @@ function Timer(fn, t) {
 
 function changeWord() {
     let cw = wordArray[currentWord];
-    let nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
+    let nw = currentWord === words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
     for(let i = 0; i < cw.length; i++) {
         animateLetterOut(cw, i);
     }
@@ -205,7 +226,7 @@ function changeWord() {
         animateLetterIn(nw, i);
     }
 
-    currentWord = (currentWord == wordArray.length - 1) ? 0 : currentWord + 1;
+    currentWord = (currentWord === wordArray.length - 1) ? 0 : currentWord + 1;
 }
 
 function animateLetterOut(cw, i) {
@@ -245,7 +266,7 @@ function swiping() {
         speed: 1600,
         pagination: '.swiper-pagination',
         paginationBulletRender: function(swiper, index, className) {
-            let year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+            let year = __('.swiper-slide')[index].getAttribute('data-year');
             return '<span class="' + className + '">' + year + '</span>';
         },
         paginationClickable: true,
