@@ -1,7 +1,7 @@
 <header>
     <div class="fix">
         <div class="logo"><a href="#home">{% include /icons/logo.html %}</a></div>
-        <div class="burger" onclick="togglemenu();"></div>
+        <div class="burger" onclick="toggleMenu();"></div>
         <nav id="navigasi">
             {% for nav in site.data.set.menu %}
             <a href="#{{ nav }}">{{ nav }}</a>

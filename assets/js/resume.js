@@ -19,13 +19,13 @@ const bubbleLifeTime = 3;
 const noOfBubbles = 15;
 const wrapper = _('h1');
 
-document.addEventListener('DOMContentLoaded', function() {
-    smoothScroll(2000);
-    sertifikat(7000);
+window.onload = function() {
+    smoothScroll(250);
+    activateCertificateSlider(7000);
     window.fitText(__("h1"), 1);
     window.fitText(__(".email"), 1.5);
-    autobio(7000);
-    bio();
+    runAutoBio(7000);
+    setBio();
     AOS.init({
         duration: 750
     });
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(changeWord, 3000);
     swiping();
     if(!!window.styleMedia) _("header").style.backgroundAttachment = "unset";
-});
+};
 
 function initBubbles() {
     let bubble;
@@ -94,7 +94,7 @@ function animate(elem, style, unit, from, to, time, prop) {
             if (step === 1) {
                 clearInterval(timer);
             }
-        }, 0);
+        }, 25);
     if (prop) {
         elem[style] = from+unit;
     } else {
@@ -102,12 +102,12 @@ function animate(elem, style, unit, from, to, time, prop) {
     }
 }
 
-function sertifikat(durasi) {
+function activateCertificateSlider(durasi) {
     setActiveClass(__('.isi-layar')[0]);
     setActiveClass(__('.ikon-doc')[0]);
     setActiveClass(__('.tombol')[0]);
 
-    let autosertifikat = runsertifikat(durasi);
+    let autosertifikat = runCertificate(durasi);
     __('.ikon-doc, .tombol').forEach(el => el.onclick = function() {
         autosertifikat.stop();
         autosertifikat.start();
@@ -147,8 +147,8 @@ function changeActiveElement(el, pos, name) {
     setActiveElement(elements[pos], name);
 }
 
-function runsertifikat(durasi) {
-    return new Timer(function() {
+function runCertificate(durasi) {
+    return new setTimer(function() {
         let logoygaktif = __('.layar')[0].querySelector('.logo-aktif'),
             posisi = getIndexElement(logoygaktif),
             jumlahlogo = __('.isi-layar').length;
@@ -164,13 +164,13 @@ function runsertifikat(durasi) {
     }, durasi);
 }
 
-function bio() {
+function setBio() {
     setActiveElement(__('.isi-bio')[0], 'bio-aktif');
 }
 
-function autobio(durasi) {
+function runAutoBio(durasi) {
     setInterval(function() {
-        let logoygaktif = __('.bio')[0].querySelector('.bio-aktif'),
+        let logoygaktif = __('.setBio')[0].querySelector('.bio-aktif'),
             posisi = getIndexElement(logoygaktif),
             jumlahlogo = __('.isi-bio').length;
         if(posisi === jumlahlogo - 1) {
@@ -181,12 +181,12 @@ function autobio(durasi) {
     }, durasi);
 }
 
-function togglemenu() {
+function toggleMenu() {
     let menu = _('#navigasi');
     menu.classList.toggle('menu-hp');
 }
 
-function Timer(fn, t) {
+function setTimer(fn, t) {
     let timerObj = setInterval(fn, t);
 
     this.stop = function() {
