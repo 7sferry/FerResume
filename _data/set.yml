@@ -95,41 +95,31 @@ interests:
 #daftar pengalaman
 experiences:
 -
-  tahun: September 2019
-  tugas: Advotics Teknologi Global
-  gambar: advo.png
-  ket: "Joined Advotics Teknologi Global -<i>an advocacy analytics startup which focuses on supply chain businesses</i>-
-  as Software Development Engineer to develop microservices back end technology as web services with clean architecture.
-  Tech used: <b>Spring boot, Hibernate, Mockito, Mysql as Database, and CentOS as Application Server</b>."
+  tahun: October 2013
+  tugas: Politeknik Pos Indonesia
+  gambar: fotopoltekpos.JPG
+  ket: "Began interested in technology since on high school and took Informatics Engineering at Politeknik Pos
+  Indonesia -<i>one of polytechnic which located in Bandung</i>- and graduated with <b>GPA 3.47</b>."
 -
-  tahun: May 2019
-  tugas: Permodalan Nasional Madani
-  gambar: pnm.jpg
-  ket: "Assisted Permodalan Nasional Madani (PNM) -<i>an Indonesian state owned enterprises (BUMN) which
-  focuses on financing small and medium enterprises</i>- to develop back end technology as web services for
-  Investment Management System for 3 months. Tech used: <b>Groovy, Grails, Spring, Hibernate, AngularJS, PostgreSQL as
-  Database, Red Hat as Server and Tomcat as Application Server</b>."
+  tahun: February 2016
+  tugas: Nusantara Turbin & Propulsi
+  gambar: ntp.jpg
+  ket: "Had internship before graduated from Polytechnic Pos Indonesia at Nusantara Turbin & Propulsi -<i>a company
+  that focused on aero engine maintenance</i>- to design and build a website to monitor server's temperature
+  with chart for a month. Tech used: <b>PHP and Javascript with MySQL as Database and Apache as Web Server</b>."
 -
-  tahun: December 2018
-  tugas: Alfacart
-  gambar: alfa.jpg
-  ket: "Deployed to Sumber Trijaya Lestari -<i>one of the  biggest retail company in Indonesia</i>- to develop
-  Alfacart Back Office apps in full stack for 4 months. Tech used: <b>Spring, Jsp/Jstl, Jquery, Sql2Java, Tomcat as
-  Application Server and PostgreSQL as Database</b>."
+  tahun: August 2017
+  tugas: Indivara Group
+  gambar: indivara.jpeg
+  ket: "Started my first professional career in Technology Industry at Indivara Group -<i>a holding company of some
+  IT companies in local and overseas</i>- as Graduated Programmer attending some training classes for 5 months
+  including Soft Skill and Hard Skill especially Java Enterprise and its frameworks."
 -
-  tahun: September 2018
-  tugas: Ultra Voucher
-  gambar: uv.png
-  ket: "Helped one of Indivara Group's client, Trimegah Karya Pratama -<i>an e-commerce which distributed
-  vouchers for merchants</i>- to develop a few features on Rest API for 2 months. Tech used: <b>Spring, Mybatis,
-  Tomcat as Application Server and PostgreSQL as Database</b>."
--
-  tahun: June 2018
-  tugas: Novo Dashboard
-  gambar: novo.jpg
-  ket: "Developed a sales dashboard apps for Novo Nordisk Indonesia -<i>a subsidiary of an international health care
-  company</i>- for 3 months. Tech used: <b>Spring, AOP, Mybatis, Angular JS, Windows Server 2012 as Server, Tomcat as
-  Application Server and SQL Server 2008 R2 as Database</b>."
+  tahun: December 2017
+  tugas: Pradipta Jatis Indonesia
+  gambar: pji.jpg
+  ket: "Assigned to Pradipta Jatis Indonesia -<i>one of subsidiary of Jatis Group</i>- as Associate Business
+  Technologist and have been actively contributed on some projects."
 -
   tahun: January 2018
   tugas: Betterway
@@ -139,31 +129,42 @@ experiences:
    used: <b>Spring Boot,  Struts, Mybatis, Hibernate, Javascript, Jsp/Jstl, Amazon Web Service as Server, Tomcat as
    Application Server and PostgreSQL as  Database</b>."
 -
-  tahun: December 2017
-  tugas: Pradipta Jatis Indonesia
-  gambar: pji.jpg
-  ket: "Assigned to Pradipta Jatis Indonesia -<i>one of subsidiary of Jatis Group</i>- as Associate Business
-  Technologist and have been actively contributed on some projects."
+  tahun: June 2018
+  tugas: Novo Dashboard
+  gambar: novo.jpg
+  ket: "Developed a sales dashboard apps for Novo Nordisk Indonesia -<i>a subsidiary of an international health care
+  company</i>- for 4 months. Tech used: <b>Spring, AOP, Mybatis, Angular JS, Windows Server 2012 as Server, Tomcat as
+  Application Server and SQL Server 2008 R2 as Database</b>."
 -
-  tahun: August 2017
-  tugas: Indivara Group
-  gambar: indivara.jpeg
-  ket: "Started my first professional career in Technology Industry at Indivara Group -<i>a holding company of some
-  IT companies in local and overseas</i>- as Graduated Programmer attending some training classes for 5 months
-  including Soft Skill and Hard Skill especially Java Enterprise and its frameworks."
+  tahun: October 2018
+  tugas: Ultra Voucher
+  gambar: uv.png
+  ket: "Helped one of Indivara Group's client, Trimegah Karya Pratama -<i>an e-commerce which distributed
+  vouchers for merchants</i>- to develop a few features on Rest API for 2 months. Tech used: <b>Spring, Mybatis,
+  Tomcat as Application Server and PostgreSQL as Database</b>."
 -
-  tahun: February 2016
-  tugas: Nusantara Turbin & Propulsi
-  gambar: ntp.jpg
-  ket: "Had internship before graduated from Polytechnic Pos Indonesia at Nusantara Turbin & Propulsi -<i>a company
-  that focused on aero engine maintenance</i>- to design and build a website to monitor server's temperature
-  with chart for a month. Tech used: <b>PHP and Javascript with MySQL as Database and Apache as Web Server</b>."
+  tahun: December 2018
+  tugas: Alfacart
+  gambar: alfa.jpg
+  ket: "Deployed to Sumber Trijaya Lestari -<i>one of the  biggest retail company in Indonesia</i>- to develop
+  Alfacart Back Office apps in full stack for 4 months. Tech used: <b>Spring, Jsp/Jstl, Jquery, Sql2Java, Tomcat as
+  Application Server and PostgreSQL as Database</b>."
 -
-  tahun: October 2013
-  tugas: Politeknik Pos Indonesia
-  gambar: fotopoltekpos.JPG
-  ket: "Began interested in technology since on high school and took Informatics Engineering at Politeknik Pos
-  Indonesia -<i>one of polytechnic which located in Bandung</i>- and graduated with <b>GPA 3.47</b>."
+  tahun: May 2019
+  tugas: Permodalan Nasional Madani
+  gambar: pnm.jpg
+  ket: "Assisted Permodalan Nasional Madani (PNM) -<i>an Indonesian state owned enterprises (BUMN) which
+  focuses on financing small and medium enterprises</i>- to develop back end technology as web services for
+  Investment Management System for 4 months. Tech used: <b>Groovy, Grails, Spring, Hibernate, AngularJS, PostgreSQL as
+  Database, Red Hat as Server and Tomcat as Application Server</b>."
+-
+  tahun: September 2019
+  tugas: Advotics Teknologi Global
+  gambar: advo.png
+  ket: "Joined Advotics Teknologi Global -<i>an advocacy analytics startup which focuses on supply chain businesses</i>-
+  as Software Development Engineer to develop microservices back end technology as web services with clean architecture
+  and multiple design patterns. Tech used: <b>Spring boot, Hibernate, Mockito, Mysql as Database, and CentOS as
+  Application Server</b>."
 
 
 #sertifikat

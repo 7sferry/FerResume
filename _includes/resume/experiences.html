@@ -3,7 +3,7 @@
     <div data-aos="fade" data-aos-easing="ease-in-sine" class="timeline">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                {% for work in site.data.set.experiences %}
+                {% for work in site.data.set.experiences reversed %}
                 <div class="swiper-slide" data-swiper-autoplay="15000"
                      style="background-image: url('../{{site.data.set.imgPath}}/experiences/{{work.gambar}}')"
                      data-year="{{work.tahun}}">
