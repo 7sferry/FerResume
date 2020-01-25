@@ -5,11 +5,11 @@ title: "Ferry Suhandri"
 mail: '7sferry@gmail.com'
 
 banner:
-- {warna: green, slogan: ' Software Engineer'}
-- {warna: belize, slogan: ' Fast Learner'}
-- {warna: pomegranate, slogan: ' Hardwork Achiever'}
-- {warna: wisteria, slogan: ' Logical Thinker'}
-- {warna: midnight, slogan: ' Problem Solver'}
+- {warna: green, slogan: 'Software Engineer'}
+- {warna: belize, slogan: 'Fast Learner'}
+- {warna: pomegranate, slogan: 'Hardwork Achiever'}
+- {warna: wisteria, slogan: 'Logical Thinker'}
+- {warna: midnight, slogan: 'Problem Solver'}
 
 thumbnail: "smileglasses1.jpg"
 
@@ -17,8 +17,8 @@ fbid: "708906762920155"
 
 url: "https://ferry.netlify.com"
 
-description: 'Example of online CV/Resume for Software Engineer made by Ferry Suhandri -an IT Strategist from Solok
-West Sumatera Indonesia-'
+description: 'Online CV for Software Engineer made by Ferry Suhandri -an IT Strategist from Solok
+West Sumatera- who experienced from Advotics Teknologi Global and Jatis'
 
 author: 'Ferry Suhandri'
 
@@ -241,17 +241,17 @@ index:
 -
   judul: "Resume"
   link: "resume"
-  ikon: "👷‍♂️"
+  ikon: "😎️"
   warna1: "ffd817"
   warna2: "f6a21d"
-  konten: "It contains my professional information included skills, experiences and certificates."
+  konten: "My curriculum vitae. It contains my professional information included skills, experiences and certificates."
 -
   judul: "Facebook"
   link: "https://facebook.com/7sferry"
   ikon: "👦"
   warna1: "ab6ee5"
   warna2: "9937ee"
-  konten: "My personal social media. I am actively using facebook in my free time."
+  konten: "My primary social media. I am actively using facebook in my free time."
 -
   judul: "Blog"
   link: "https://www.mrferry.co.vu/?m=0"
@@ -259,3 +259,17 @@ index:
   warna1: "ff61b0"
   warna2: "fe2c7c"
   konten: "My personal blog. I used to share my point of view about things sometime."
+-
+  judul: "Github"
+  link: "https://github.com/7sferry"
+  ikon: "🤠"
+  warna1: "86ed26;"
+  warna2: "00c062"
+  konten: "My online repo. I saved my own experiment projects here."
+-
+  judul: "LinkedIN"
+  link: "https://www.linkedin.com/in/7sferry/"
+  ikon: "👷‍"
+  warna1: "00F260;"
+  warna2: "0575E6"
+  konten: "My professional contact. I updated my professional things here."
