@@ -13,7 +13,7 @@ function _(el){
 const words = __('.word');
 let wordArray = [];
 let currentWord = 0;
-words[currentWord].style.opacity = 1;
+words[currentWord].style.opacity = '1';
 
 const bubbleLifeTime = 3;
 const noOfBubbles = 15;
