@@ -226,13 +226,13 @@ social:
   ikon: in
   title: "LinkedIn"
 -
-  link: 'https://www.mrferry.co.vu/?m=0'
+  link: 'https://ferry.now.sh'
   ikon: blogger
   title: "Blog"
--
-  ikon: whatsapp
-  text: "+62 853 5545 2155"
-  title: "Let's Talk!"
+#-
+#  ikon: whatsapp
+#  text: "+62 853 5545 2155"
+#  title: "Let's Talk!"
 #- {link: 'https://www.slideshare.net/slideshow/embed_code/key/prjRWnUbea66WH', nama: cv.png}
 
 
