@@ -226,7 +226,7 @@ social:
   ikon: in
   title: "LinkedIn"
 -
-  link: 'https://ferry.now.sh'
+  link: 'https://ferry.vercel.app/'
   ikon: blogger
   title: "Blog"
 #-
@@ -254,7 +254,7 @@ index:
   konten: "My primary social media. I am actively using facebook in my free time."
 -
   judul: "Blog"
-  link: "https://ferry.now.sh/"
+  link: "https://ferry.vercel.app/"
   ikon: "💻"
   warna1: "ff61b0"
   warna2: "fe2c7c"
